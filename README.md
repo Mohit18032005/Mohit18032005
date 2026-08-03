@@ -146,24 +146,25 @@ $ git log --stat
 
 <div align="center">
 
-<table>
-  <tr>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api?username=Mohit18032005&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=c9d1d9&include_all_commits=true&count_private=true" alt="GitHub Stats" />
-    </td>
-    <td>
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohit18032005&layout=compact&langs_count=8&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=c9d1d9" alt="Top Languages" />
-    </td>
-  </tr>
-</table>
+<!-- GitHub Trophies -->
+<img src="https://github-profile-trophy.vercel.app/?username=Mohit18032005&theme=radical&no-frame=true&no-bg=true&margin-w=4&column=7" width="100%" alt="GitHub Trophies"/>
 
-<br/>
+<br/><br/>
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=Mohit18032005&theme=tokyonight&hide_border=true&background=0D1117&ring=A855F7&fire=A855F7&currStreakLabel=A855F7&sideLabels=A855F7&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888)](https://git.io/streak-stats)
+<!-- Stats Badges Row -->
+![Followers](https://img.shields.io/github/followers/Mohit18032005?style=for-the-badge&logo=github&color=a855f7&labelColor=0d1117&label=Followers)
+![Public Repos](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMohit18032005&query=public_repos&style=for-the-badge&logo=github&color=a855f7&labelColor=0d1117&label=Repos)
+![Stars](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.github.com%2Fusers%2FMohit18032005&query=public_gists&style=for-the-badge&logo=github&color=a855f7&labelColor=0d1117&label=Gists)
 
-<br/>
+<br/><br/>
 
-[![Mohit's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Mohit18032005&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area=true&area_color=2d1b69&hide_border=true&custom_title=Mohit%27s%20Contribution%20Graph)](https://github.com/Mohit18032005)
+<!-- Streak Stats -->
+[![GitHub Streak](https://streak-stats.demolab.com?user=Mohit18032005&theme=radical&hide_border=true&background=0D1117&ring=A855F7&fire=A855F7&currStreakLabel=A855F7&sideLabels=A855F7&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=888888&mode=weekly)](https://streak-stats.demolab.com)
+
+<br/><br/>
+
+<!-- Activity Graph -->
+[![Mohit's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Mohit18032005&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area=true&area_color=2d1b69&hide_border=true&custom_title=Mohit%27s%20Contribution%20Graph&radius=16)](https://github.com/Mohit18032005)
 
 </div>
 
