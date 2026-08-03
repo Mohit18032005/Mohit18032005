@@ -77,7 +77,7 @@ while alive:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/certs.svg?v=naruto_v1" width="100%" alt="Certifications HUD"/>
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/certs.svg?v=naruto_v3" width="100%" alt="Certifications HUD"/>
 
 </div>
 
