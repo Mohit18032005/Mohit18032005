@@ -102,18 +102,7 @@ while alive:
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=python,c,java,tensorflow,raspberrypi,azure,gcp,linux,bash,git,github,vscode&theme=dark&perline=6" alt="Tech Stack Icons"/>
-
-<br/><br/>
-
-| Layer | Technologies |
-|-------|-------------|
-| **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
-| **AI / ML** | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![IBM Granite](https://img.shields.io/badge/IBM_Granite-052FAD?style=flat-square&logo=ibm&logoColor=white) |
-| **IoT / Hardware** | ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white) ![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=flat-square&logo=nvidia&logoColor=white) |
-| **Cloud** | ![Azure](https://img.shields.io/badge/Microsoft_Azure-0089D0?style=flat-square&logo=microsoft-azure&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white) |
-| **Data** | ![Data Analytics](https://img.shields.io/badge/Data_Analytics-FF6384?style=flat-square&logo=chartdotjs&logoColor=white) |
-| **Security** | ![Cyber Security](https://img.shields.io/badge/Cyber_Security-1F1F1F?style=flat-square&logo=hackthebox&logoColor=00ff00) |
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/skills.svg" width="100%" alt="Tech Stack HUD"/>
 
 </div>
 
