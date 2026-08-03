@@ -27,9 +27,6 @@
 
 > *"Motivated to solve real-world problems through the lens of Artificial Intelligence — one project at a time."*
 
-[![Mohit's Portfolio](https://img.shields.io/badge/🌐%20Mohit's%20Portfolio-Visit%20Now-a855f7?style=for-the-badge&logoColor=white)](https://demo-portfolio-one-delta.vercel.app/)
-
-<br clear="right"/>
 
 <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
