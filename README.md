@@ -18,9 +18,7 @@
 
 ---
 
-```bash
-$ whoami
-```
+## `$ whoami`
 
 ```
 ╔══════════════════════════════════════════════════════════╗
@@ -36,9 +34,7 @@ $ whoami
 
 ---
 
-```bash
-$ cat about_me.txt
-```
+## `$ cat about_me.txt`
 
 I'm an **AI & ML-focused CSE student** who loves getting my hands dirty — from training models and analyzing data to wiring up a Raspberry Pi and watching hardware come alive.  
 Nine certifications in. Two physical robots built. One internship shipped. And still just getting started.
@@ -47,9 +43,7 @@ The best code I write is the code that solves a problem nobody thought could be 
 
 ---
 
-```bash
-$ ls ~/projects
-```
+## `$ ls ~/projects`
 
 <div align="center">
 
@@ -87,9 +81,7 @@ $ ls ~/projects
 
 ---
 
-```bash
-$ cat stack.json
-```
+## `$ cat stack.json`
 
 <div align="center">
 
@@ -106,9 +98,7 @@ $ cat stack.json
 
 ---
 
-```bash
-$ cat certifications.md 🏆
-```
+## `$ cat certifications.md` 🏆
 
 | Certification | Issuer | Date |
 |---------------|--------|------|
@@ -126,9 +116,7 @@ $ cat certifications.md 🏆
 
 ---
 
-```bash
-$ cat experience.md
-```
+## `$ cat experience.md`
 
 ### 💼 Artificial Intelligence Intern — Codec Technologies Pvt. Ltd. *(Remote)*
 *May 14, 2026 – June 14, 2026 · AICTE & ICAC Approved · National Internship Portal*
@@ -140,9 +128,7 @@ $ cat experience.md
 
 ---
 
-```bash
-$ git log --stat
-```
+## `$ git log --stat`
 
 <div align="center">
 
@@ -152,9 +138,7 @@ $ git log --stat
 
 ---
 
-```bash
-$ cat philosophy.md
-```
+## `$ cat philosophy.md`
 
 <div align="center">
 
@@ -169,9 +153,7 @@ $ cat philosophy.md
 
 ---
 
-```bash
-$ cat open_to.txt
-```
+## `$ cat open_to.txt`
 
 ```
 🟢  AI/ML project collaborations
@@ -183,9 +165,7 @@ $ cat open_to.txt
 
 ---
 
-```bash
-$ fortune
-```
+## `$ fortune`
 
 <div align="center">
 
@@ -195,9 +175,7 @@ $ fortune
 
 ---
 
-```bash
-let's connect
-```
+## `let's connect`
 
 <div align="center">
 
@@ -218,6 +196,4 @@ let's connect
 
 </div>
 
-```bash
-mohit@github:~$ exit
-```
+## `mohit@github:~$ exit`
