@@ -66,35 +66,9 @@ while alive:
 
 <div align="center">
 
-[![Project 1](https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&duration=2500&pause=99999&color=FF6B6B&center=true&vCenter=true&width=600&lines=📡+Radar-Based+Object+Detection+System&repeat=false)](https://github.com/Mohit18032005)
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/projects.svg" width="100%" alt="Projects HUD"/>
 
 </div>
-
-> **Built a real radar** using a Raspberry Pi + ultrasonic sensor on a rotating servo motor — 180° scanning, live object plotting on screen.
-
-- → Servo + ultrasonic sensor covering full 180° sweep
-- → Python scripts capturing real-time distance + angle data
-- → Live radar-style terminal/GUI visualization
-- → Embedded systems · sensor interfacing · real-time processing
-
-**Stack:** `Raspberry Pi` `Python` `Ultrasonic Sensor` `Servo Motor` `GPIO`
-
----
-
-<div align="center">
-
-[![Project 2](https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&duration=2500&pause=99999&color=A855F7&center=true&vCenter=true&width=600&lines=🤖+Voice-Controlled+AI+Robot&repeat=false)](https://github.com/Mohit18032005)
-
-</div>
-
-> **A robot that listens and moves** — built on Raspberry Pi, driven by voice commands processed through Google/Alexa Voice API.
-
-- → Voice commands translated to motor control signals via GPIO
-- → Google/Alexa Speech Recognition for NLP command processing
-- → Supports: forward, backward, left, right navigation
-- → Real example of human-robot interaction using AI
-
-**Stack:** `Raspberry Pi` `Python` `Google Voice API` `Alexa API` `GPIO`
 
 <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
