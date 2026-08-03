@@ -21,15 +21,8 @@
 
 <img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="360" alt="Coding GIF"/>
 
-```
-╔══════════════════════════════════════════════════════════╗
-║  Name    →  MD Mohit Khan                                ║
-║  Degree  →  B.Tech CSE (AI) · 2nd Year · IEM Kolkata    ║
-║  Focus   →  AI / ML / IoT / Cybersecurity                ║
-║  Base    →  Kolkata, West Bengal 🇮🇳                      ║
-║  Status  →  Building · Learning · Shipping               ║
-╚══════════════════════════════════════════════════════════╝
-```
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/whoami.svg" width="100%" alt="whoami card"/>
+
 
 > *"Motivated to solve real-world problems through the lens of Artificial Intelligence — one project at a time."*
 
