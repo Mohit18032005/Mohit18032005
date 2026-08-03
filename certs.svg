@@ -1,0 +1,176 @@
+<svg width="850" height="400" viewBox="0 0 850 400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="sg" x="-5%" y="-30%" width="110%" height="160%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <linearGradient id="progBg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="clip"><rect width="850" height="400"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#clip)">
+    <rect width="850" height="400" fill="#080b10"/>
+
+    <!-- Dot grid -->
+    <g fill="#a855f7" opacity="0.025">
+      <circle cx="80" cy="80" r="1.2"/><circle cx="170" cy="80" r="1.2"/><circle cx="260" cy="80" r="1.2"/><circle cx="350" cy="80" r="1.2"/><circle cx="440" cy="80" r="1.2"/><circle cx="530" cy="80" r="1.2"/><circle cx="620" cy="80" r="1.2"/><circle cx="710" cy="80" r="1.2"/><circle cx="800" cy="80" r="1.2"/>
+      <circle cx="80" cy="160" r="1.2"/><circle cx="170" cy="160" r="1.2"/><circle cx="260" cy="160" r="1.2"/><circle cx="350" cy="160" r="1.2"/><circle cx="440" cy="160" r="1.2"/><circle cx="530" cy="160" r="1.2"/><circle cx="620" cy="160" r="1.2"/><circle cx="710" cy="160" r="1.2"/><circle cx="800" cy="160" r="1.2"/>
+      <circle cx="80" cy="240" r="1.2"/><circle cx="170" cy="240" r="1.2"/><circle cx="260" cy="240" r="1.2"/><circle cx="350" cy="240" r="1.2"/><circle cx="440" cy="240" r="1.2"/><circle cx="530" cy="240" r="1.2"/><circle cx="620" cy="240" r="1.2"/><circle cx="710" cy="240" r="1.2"/><circle cx="800" cy="240" r="1.2"/>
+      <circle cx="80" cy="320" r="1.2"/><circle cx="170" cy="320" r="1.2"/><circle cx="260" cy="320" r="1.2"/><circle cx="350" cy="320" r="1.2"/><circle cx="440" cy="320" r="1.2"/><circle cx="530" cy="320" r="1.2"/><circle cx="620" cy="320" r="1.2"/><circle cx="710" cy="320" r="1.2"/><circle cx="800" cy="320" r="1.2"/>
+    </g>
+
+    <!-- Header bar -->
+    <rect width="850" height="36" fill="#0d0f17"/>
+    <circle cx="18" cy="18" r="6" fill="#ff5f57" opacity="0.85"/>
+    <circle cx="36" cy="18" r="6" fill="#febc2e" opacity="0.85"/>
+    <circle cx="54" cy="18" r="6" fill="#28c840" opacity="0.85"/>
+    <text x="72" y="23" fill="#a855f7" font-family="monospace" font-size="12" letter-spacing="2">$ cat certifications.md</text>
+    <text x="720" y="23" fill="#2d1b50" font-family="monospace" font-size="11">9 / 9  CERTIFIED</text>
+    <line x1="0" y1="36" x2="850" y2="36" stroke="#1a1040" stroke-width="1"/>
+
+    <!-- Progress bar -->
+    <rect x="20" y="48" width="810" height="10" rx="5" fill="#0f0920"/>
+    <rect x="20" y="48" width="810" height="10" rx="5" fill="url(#progBg)">
+      <animate attributeName="width" from="0" to="810" dur="1.5s" fill="freeze" begin="0.3s"/>
+    </rect>
+    <text x="425" y="57" text-anchor="middle" fill="white" font-family="monospace" font-size="7" letter-spacing="1">9 / 9  CERTIFICATIONS  EARNED</text>
+
+    <!-- ═════ ROW 1: Generative AI — IBM ═════ -->
+    <circle cx="22" cy="80" r="5.5" fill="#4589ff" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="0s"/>
+    </circle>
+    <text x="36" y="84" fill="#e2e8f0" font-family="monospace" font-size="12">Generative AI</text>
+    <rect x="490" y="70" width="72" height="18" rx="9" fill="#000d2a" stroke="#4589ff" stroke-width="0.8"/>
+    <text x="526" y="83" text-anchor="middle" fill="#4589ff" font-family="monospace" font-size="10">IBM</text>
+    <text x="700" y="84" fill="#4a3570" font-family="monospace" font-size="11">Mar 2025</text>
+
+    <!-- Separator -->
+    <line x1="20" y1="96" x2="830" y2="96" stroke="#12103a" stroke-width="0.6"/>
+
+    <!-- ═════ ROW 2: AI on Microsoft Azure — Microsoft ═════ -->
+    <circle cx="22" cy="113" r="5.5" fill="#00A4EF" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="0.28s"/>
+    </circle>
+    <text x="36" y="117" fill="#e2e8f0" font-family="monospace" font-size="12">AI on Microsoft Azure</text>
+    <rect x="490" y="103" width="104" height="18" rx="9" fill="#00060f" stroke="#00A4EF" stroke-width="0.8"/>
+    <text x="542" y="116" text-anchor="middle" fill="#00A4EF" font-family="monospace" font-size="10">Microsoft</text>
+    <text x="700" y="117" fill="#4a3570" font-family="monospace" font-size="11">Jul 2025</text>
+
+    <line x1="20" y1="129" x2="830" y2="129" stroke="#12103a" stroke-width="0.6"/>
+
+    <!-- ═════ ROW 3: Ignite India — Wadhwani Foundation ═════ -->
+    <circle cx="22" cy="146" r="5.5" fill="#22c55e" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="0.56s"/>
+    </circle>
+    <text x="36" y="150" fill="#e2e8f0" font-family="monospace" font-size="12">Ignite India (Entrepreneurship)</text>
+    <rect x="490" y="136" width="140" height="18" rx="9" fill="#001a00" stroke="#22c55e" stroke-width="0.8"/>
+    <text x="560" y="149" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="10">Wadhwani Fdn</text>
+    <text x="700" y="150" fill="#4a3570" font-family="monospace" font-size="11">Oct 2025</text>
+
+    <line x1="20" y1="162" x2="830" y2="162" stroke="#12103a" stroke-width="0.6"/>
+
+    <!-- ═════ ROW 4: Hands-on IoT — UEM Kolkata ═════ -->
+    <circle cx="22" cy="179" r="5.5" fill="#f97316" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="0.84s"/>
+    </circle>
+    <text x="36" y="183" fill="#e2e8f0" font-family="monospace" font-size="12">Hands-on IoT: RPi &amp; NVIDIA Jetson</text>
+    <rect x="490" y="169" width="112" height="18" rx="9" fill="#1a0700" stroke="#f97316" stroke-width="0.8"/>
+    <text x="546" y="182" text-anchor="middle" fill="#f97316" font-family="monospace" font-size="10">UEM Kolkata</text>
+    <text x="700" y="183" fill="#4a3570" font-family="monospace" font-size="11">Sep 2025</text>
+
+    <line x1="20" y1="195" x2="830" y2="195" stroke="#12103a" stroke-width="0.6"/>
+
+    <!-- ═════ ROW 5: Data Analytics — Deloitte ═════ -->
+    <circle cx="22" cy="212" r="5.5" fill="#86efac" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="1.12s"/>
+    </circle>
+    <text x="36" y="216" fill="#e2e8f0" font-family="monospace" font-size="12">Data Analytics</text>
+    <rect x="490" y="202" width="86" height="18" rx="9" fill="#001a00" stroke="#86efac" stroke-width="0.8"/>
+    <text x="533" y="215" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="10">Deloitte</text>
+    <text x="700" y="216" fill="#4a3570" font-family="monospace" font-size="11">Oct–Nov 2025</text>
+
+    <line x1="20" y1="228" x2="830" y2="228" stroke="#12103a" stroke-width="0.6"/>
+
+    <!-- ═════ ROW 6: Foundations of Data — Google ═════ -->
+    <circle cx="22" cy="245" r="5.5" fill="#4285F4" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="1.4s"/>
+    </circle>
+    <text x="36" y="249" fill="#e2e8f0" font-family="monospace" font-size="12">Foundations of Data</text>
+    <rect x="490" y="235" width="80" height="18" rx="9" fill="#000a1a" stroke="#4285F4" stroke-width="0.8"/>
+    <text x="530" y="248" text-anchor="middle" fill="#4285F4" font-family="monospace" font-size="10">Google</text>
+    <text x="700" y="249" fill="#4a3570" font-family="monospace" font-size="11">Dec 2025</text>
+
+    <line x1="20" y1="261" x2="830" y2="261" stroke="#12103a" stroke-width="0.6"/>
+
+    <!-- ═════ ROW 7: Cyber Job Simulation — Deloitte ═════ -->
+    <circle cx="22" cy="278" r="5.5" fill="#00ff88" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="1.68s"/>
+    </circle>
+    <text x="36" y="282" fill="#e2e8f0" font-family="monospace" font-size="12">Cyber Job Simulation</text>
+    <rect x="490" y="268" width="86" height="18" rx="9" fill="#001a00" stroke="#86efac" stroke-width="0.8"/>
+    <text x="533" y="281" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="10">Deloitte</text>
+    <text x="700" y="282" fill="#4a3570" font-family="monospace" font-size="11">Jan 2026</text>
+
+    <line x1="20" y1="294" x2="830" y2="294" stroke="#12103a" stroke-width="0.6"/>
+
+    <!-- ═════ ROW 8: IBM Granite Models — IBM ═════ -->
+    <circle cx="22" cy="311" r="5.5" fill="#4589ff" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="1.96s"/>
+    </circle>
+    <text x="36" y="315" fill="#e2e8f0" font-family="monospace" font-size="12">IBM Granite Models for Software Dev</text>
+    <rect x="490" y="301" width="72" height="18" rx="9" fill="#000d2a" stroke="#4589ff" stroke-width="0.8"/>
+    <text x="526" y="314" text-anchor="middle" fill="#4589ff" font-family="monospace" font-size="10">IBM</text>
+    <text x="700" y="315" fill="#4a3570" font-family="monospace" font-size="11">Mar 2026</text>
+
+    <line x1="20" y1="327" x2="830" y2="327" stroke="#12103a" stroke-width="0.6"/>
+
+    <!-- ═════ ROW 9: AI Internship — Codec Technologies ═════ -->
+    <circle cx="22" cy="344" r="5.5" fill="#a855f7" filter="url(#glow)">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="2.24s"/>
+    </circle>
+    <text x="36" y="348" fill="#e2e8f0" font-family="monospace" font-size="12">AI Internship</text>
+    <rect x="490" y="334" width="126" height="18" rx="9" fill="#100020" stroke="#a855f7" stroke-width="0.8"/>
+    <text x="553" y="347" text-anchor="middle" fill="#a855f7" font-family="monospace" font-size="10">Codec Technologies</text>
+    <text x="700" y="348" fill="#4a3570" font-family="monospace" font-size="11">May–Jun 2026</text>
+
+    <!-- ═════ FOOTER ═════ -->
+    <line x1="0" y1="364" x2="850" y2="364" stroke="#1a1040" stroke-width="1"/>
+    <text x="425" y="382" text-anchor="middle" fill="#2d1b50" font-family="monospace" font-size="11" letter-spacing="2">9 CERTS  ·  2 ROBOTS BUILT  ·  1 INTERNSHIP  ·  STILL SHIPPING</text>
+
+    <!-- Pulsing checkmarks after footer text -->
+    <circle cx="790" cy="379" r="3" fill="#a855f7" opacity="0.5">
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.5s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Scanning line -->
+    <rect x="0" y="36" width="850" height="1.5" fill="url(#scan)">
+      <animate attributeName="y"       values="36;363;36"    dur="9s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.95;1" dur="9s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Corner brackets -->
+    <g stroke="#a855f7" stroke-width="1.5" fill="none">
+      <path d="M8,20 L8,8 L20,8"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="0s"/></path>
+      <path d="M842,20 L842,8 L830,8"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="1s"/></path>
+      <path d="M8,382 L8,394 L20,394"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="1.5s"/></path>
+      <path d="M842,382 L842,394 L830,394"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="0.5s"/></path>
+    </g>
+
+    <!-- Outer border -->
+    <rect x="0.5" y="0.5" width="849" height="399" fill="none" stroke="#a855f7" stroke-width="0.8">
+      <animate attributeName="opacity" values="0.1;0.35;0.1" dur="4.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>
