@@ -146,12 +146,12 @@ $ git log --stat
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Mohit18032005&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=ffffff&ring_color=a855f7" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohit18032005&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=ffffff" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Mohit18032005&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=ffffff&ring_color=a855f7&cache_seconds=1800" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohit18032005&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=ffffff&cache_seconds=1800" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Mohit18032005&theme=radical&hide_border=true&background=0d1117&ring=a855f7&fire=ff6b6b&currStreakLabel=a855f7" />
+<img src="https://streak-stats.demolab.com?user=Mohit18032005&theme=radical&hide_border=true&background=0D1117&ring=a855f7&fire=ff6b6b&currStreakLabel=a855f7&sideLabels=a855f7&dates=888888" />
 
 <br/>
 
