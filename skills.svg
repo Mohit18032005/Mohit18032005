@@ -1,293 +1,416 @@
-<svg width="850" height="340" viewBox="0 0 850 340" xmlns="http://www.w3.org/2000/svg">
+<svg width="860" height="370" viewBox="0 0 860 370" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient: Deep Ocean & Midnight Sky -->
-    <linearGradient id="oceanBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%"   stop-color="#070e1b"/>
-      <stop offset="45%"  stop-color="#0b172a"/>
-      <stop offset="85%"  stop-color="#091f36"/>
-      <stop offset="100%" stop-color="#040c17"/>
+    <!-- Ocean Deep Background -->
+    <linearGradient id="seaBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#03071e"/>
+      <stop offset="40%" stop-color="#071a35"/>
+      <stop offset="80%" stop-color="#0a2547"/>
+      <stop offset="100%" stop-color="#031526"/>
     </linearGradient>
 
-    <!-- Gold Treasure Glow -->
-    <filter id="goldGlow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <!-- Gold card background -->
+    <linearGradient id="goldCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#1a1200"/>
+      <stop offset="100%" stop-color="#0d0c00"/>
+    </linearGradient>
+
+    <!-- Red card background -->
+    <linearGradient id="redCard" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#1a0000"/>
+      <stop offset="100%" stop-color="#0d0005"/>
+    </linearGradient>
+
+    <!-- Treasure gold glow (soft, not neon) -->
+    <filter id="goldShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#f5a623" flood-opacity="0.5"/>
     </filter>
 
-    <!-- Conqueror's Haki Red/Purple Aura Filter -->
-    <filter id="hakiGlow" x="-40%" y="-40%" width="180%" height="180%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="3.5" result="blur"/>
-      <feMerge><feMergeNode in="blur"/><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <!-- Soft card shadow -->
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="1" dy="3" stdDeviation="4" flood-color="#000000" flood-opacity="0.6"/>
     </filter>
 
-    <!-- Text Glow -->
-    <filter id="textGlow">
-      <feGaussianBlur stdDeviation="1.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
-    <!-- Clip Path -->
-    <clipPath id="boardClip"><rect width="850" height="340" rx="10"/></clipPath>
+    <!-- Clip -->
+    <clipPath id="mainClip"><rect width="860" height="370" rx="12"/></clipPath>
   </defs>
 
-  <g clip-path="url(#boardClip)">
-    <!-- Deep Ocean Background -->
-    <rect width="850" height="340" fill="url(#oceanBg)"/>
+  <g clip-path="url(#mainClip)">
 
-    <!-- === ANIMATED OCEAN WAVES (Background Effect) === -->
-    <path d="M0,100 Q212,120 425,100 Q637,80 850,100 L850,340 L0,340 Z" fill="#00b4d8" opacity="0.03">
-      <animate attributeName="d" values="
-        M0,100 Q212,120 425,100 Q637,80 850,100 L850,340 L0,340 Z;
-        M0,110 Q212,90 425,110 Q637,130 850,110 L850,340 L0,340 Z;
-        M0,100 Q212,120 425,100 Q637,80 850,100 L850,340 L0,340 Z"
-        dur="8s" repeatCount="indefinite"/>
+    <!-- ═══ BACKGROUND ═══ -->
+    <rect width="860" height="370" fill="url(#seaBg)"/>
+
+    <!-- Ocean wave layers (animated) -->
+    <path opacity="0.06" fill="#4fc3f7">
+      <animate attributeName="d" dur="12s" repeatCount="indefinite" values="
+        M0,320 Q215,295 430,320 Q645,345 860,320 L860,370 L0,370 Z;
+        M0,330 Q215,310 430,330 Q645,350 860,330 L860,370 L0,370 Z;
+        M0,320 Q215,295 430,320 Q645,345 860,320 L860,370 L0,370 Z"/>
     </path>
-    <path d="M0,200 Q212,180 425,200 Q637,220 850,200 L850,340 L0,340 Z" fill="#90e0ef" opacity="0.02">
-      <animate attributeName="d" values="
-        M0,200 Q212,180 425,200 Q637,220 850,200 L850,340 L0,340 Z;
-        M0,190 Q212,210 425,190 Q637,170 850,190 L850,340 L0,340 Z;
-        M0,200 Q212,180 425,200 Q637,220 850,200 L850,340 L0,340 Z"
-        dur="10s" repeatCount="indefinite"/>
+    <path opacity="0.04" fill="#81d4fa">
+      <animate attributeName="d" dur="9s" repeatCount="indefinite" values="
+        M0,340 Q215,360 430,340 Q645,320 860,340 L860,370 L0,370 Z;
+        M0,350 Q215,330 430,350 Q645,370 860,350 L860,370 L0,370 Z;
+        M0,340 Q215,360 430,340 Q645,320 860,340 L860,370 L0,370 Z"/>
     </path>
 
-    <!-- === DRIFTING SAKURA PETALS (Wano Arc Vibe) === -->
-    <g fill="#ffb7c5" opacity="0.65" filter="url(#textGlow)">
-      <!-- Petal 1 -->
-      <path d="M0,0 C-3,-6 3,-10 6,-4 C9,2 2,6 0,0 Z">
-        <animateTransform attributeName="transform" type="translate" values="100,-10; 180,350" dur="9s" repeatCount="indefinite"/>
-        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="9s" repeatCount="indefinite" additive="sum"/>
-      </path>
-      <!-- Petal 2 -->
-      <path d="M0,0 C-3,-6 3,-10 6,-4 C9,2 2,6 0,0 Z">
-        <animateTransform attributeName="transform" type="translate" values="350,-10; 420,350" dur="11s" repeatCount="indefinite" begin="2s"/>
-        <animateTransform attributeName="transform" type="rotate" values="45; 405" dur="11s" repeatCount="indefinite" additive="sum"/>
-      </path>
-      <!-- Petal 3 -->
-      <path d="M0,0 C-3,-6 3,-10 6,-4 C9,2 2,6 0,0 Z">
-        <animateTransform attributeName="transform" type="translate" values="600,-10; 680,350" dur="10s" repeatCount="indefinite" begin="4s"/>
-        <animateTransform attributeName="transform" type="rotate" values="90; 450" dur="10s" repeatCount="indefinite" additive="sum"/>
-      </path>
-      <!-- Petal 4 -->
-      <path d="M0,0 C-3,-6 3,-10 6,-4 C9,2 2,6 0,0 Z">
-        <animateTransform attributeName="transform" type="translate" values="780,-10; 810,350" dur="8s" repeatCount="indefinite" begin="1s"/>
-        <animateTransform attributeName="transform" type="rotate" values="120; 480" dur="8s" repeatCount="indefinite" additive="sum"/>
-      </path>
+    <!-- Floating bubbles (ocean atmosphere) -->
+    <g fill="none" stroke="#90caf9" stroke-width="1" opacity="0.2">
+      <circle cx="40" cy="370" r="5">
+        <animate attributeName="cy" values="370;10" dur="8s" repeatCount="indefinite" begin="0s"/>
+        <animate attributeName="opacity" values="0.2;0.1;0" dur="8s" repeatCount="indefinite" begin="0s"/>
+      </circle>
+      <circle cx="120" cy="370" r="3">
+        <animate attributeName="cy" values="370;20" dur="6s" repeatCount="indefinite" begin="1s"/>
+        <animate attributeName="opacity" values="0.2;0.05;0" dur="6s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+      <circle cx="250" cy="370" r="6">
+        <animate attributeName="cy" values="370;30" dur="10s" repeatCount="indefinite" begin="3s"/>
+        <animate attributeName="opacity" values="0.15;0.05;0" dur="10s" repeatCount="indefinite" begin="3s"/>
+      </circle>
+      <circle cx="480" cy="370" r="4">
+        <animate attributeName="cy" values="370;15" dur="7s" repeatCount="indefinite" begin="2s"/>
+        <animate attributeName="opacity" values="0.2;0.05;0" dur="7s" repeatCount="indefinite" begin="2s"/>
+      </circle>
+      <circle cx="650" cy="370" r="5">
+        <animate attributeName="cy" values="370;25" dur="9s" repeatCount="indefinite" begin="4s"/>
+        <animate attributeName="opacity" values="0.15;0.05;0" dur="9s" repeatCount="indefinite" begin="4s"/>
+      </circle>
+      <circle cx="820" cy="370" r="3">
+        <animate attributeName="cy" values="370;10" dur="7.5s" repeatCount="indefinite" begin="0.5s"/>
+        <animate attributeName="opacity" values="0.2;0.05;0" dur="7.5s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
     </g>
 
-    <!-- === ONE PIECE STRAW HAT PIRATES HEADER BAR === -->
-    <rect width="850" height="38" fill="#0c1626" opacity="0.95"/>
-
-    <!-- Straw Hat Yellow & Red Ribbon Accent line -->
-    <line x1="0" y1="37" x2="850" y2="37" stroke="#ffb703" stroke-width="2"/>
-    <line x1="0" y1="38" x2="850" y2="38" stroke="#d90429" stroke-width="1.5"/>
-
-    <!-- STRAW HAT SKULL (Jolly Roger Icon) -->
-    <g transform="translate(14, 8)">
-      <!-- Straw Hat Top -->
-      <path d="M4,13 Q11,4 18,13 Z" fill="#ffb703"/>
-      <!-- Straw Hat Brim -->
-      <ellipse cx="11" cy="14" rx="10" ry="2.5" fill="#ffb703"/>
-      <!-- Red Band -->
-      <path d="M5,12.5 Q11,10 17,12.5" stroke="#d90429" stroke-width="2" fill="none"/>
-      <!-- Skull Head -->
-      <circle cx="11" cy="17" r="4.5" fill="#ffffff"/>
-      <!-- Eye Sockets -->
-      <circle cx="9.5" cy="16.5" r="1" fill="#000"/>
-      <circle cx="12.5" cy="16.5" r="1" fill="#000"/>
-      <!-- Crossbones behind -->
-      <line x1="2" y1="10" x2="20" y2="22" stroke="#ffffff" stroke-width="1.5"/>
-      <line x1="20" y1="10" x2="2" y2="22" stroke="#ffffff" stroke-width="1.5"/>
+    <!-- Drifting sakura petals -->
+    <g opacity="0.5">
+      <ellipse rx="5" ry="2.5" fill="#ff8fab" transform="rotate(-30)">
+        <animateTransform attributeName="transform" type="translate" values="-20,-10; 160,380" dur="12s" repeatCount="indefinite" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" values="-30; 330" dur="12s" repeatCount="indefinite" additive="sum"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" keyTimes="0;0.1;0.9;1" dur="12s" repeatCount="indefinite"/>
+      </ellipse>
+      <ellipse rx="4" ry="2" fill="#ffb3c6" transform="rotate(20)">
+        <animateTransform attributeName="transform" type="translate" values="400,-10; 550,380" dur="10s" repeatCount="indefinite" begin="3s" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" values="20; 380" dur="10s" repeatCount="indefinite" begin="3s" additive="sum"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" keyTimes="0;0.1;0.9;1" dur="10s" repeatCount="indefinite" begin="3s"/>
+      </ellipse>
+      <ellipse rx="5" ry="2.5" fill="#ff8fab" transform="rotate(-10)">
+        <animateTransform attributeName="transform" type="translate" values="720,-10; 860,380" dur="14s" repeatCount="indefinite" begin="7s" additive="sum"/>
+        <animateTransform attributeName="transform" type="rotate" values="-10; 350" dur="14s" repeatCount="indefinite" begin="7s" additive="sum"/>
+        <animate attributeName="opacity" values="0;0.5;0.5;0" keyTimes="0;0.1;0.9;1" dur="14s" repeatCount="indefinite" begin="7s"/>
+      </ellipse>
     </g>
 
-    <text x="42" y="24" fill="#ffb703" font-family="'Courier New', monospace" font-weight="bold" font-size="13" letter-spacing="1.5" filter="url(#textGlow)">
-      🏴‍☠️ GRAND LINE TECH ARSENAL // stack.json
+    <!-- ═══ HEADER BAR ═══ -->
+    <rect x="0" y="0" width="860" height="50" fill="#050d1a"/>
+    <!-- Gold top border stripe (One Piece treasure) -->
+    <rect x="0" y="0" width="860" height="3" fill="#f5a623"/>
+    <!-- Red accent under header -->
+    <rect x="0" y="48" width="860" height="2" fill="#c1121f"/>
+
+    <!-- Jolly Roger (left of header) -->
+    <g transform="translate(10,6)">
+      <!-- Hat brim -->
+      <ellipse cx="18" cy="22" rx="14" ry="4" fill="#f5a623"/>
+      <!-- Hat top -->
+      <path d="M10,22 Q18,8 26,22 Z" fill="#f5a623"/>
+      <!-- Red band -->
+      <path d="M8,20 Q18,16 28,20" stroke="#c1121f" stroke-width="2.5" fill="none"/>
+      <!-- Skull -->
+      <circle cx="18" cy="28" r="6" fill="#f0ece0"/>
+      <circle cx="16" cy="27" r="1.2" fill="#1a0000"/>
+      <circle cx="20" cy="27" r="1.2" fill="#1a0000"/>
+      <path d="M16,30.5 Q18,32 20,30.5" stroke="#1a0000" stroke-width="0.8" fill="none"/>
+      <!-- Crossbones -->
+      <line x1="5" y1="18" x2="31" y2="36" stroke="#f0ece0" stroke-width="1.8"/>
+      <line x1="31" y1="18" x2="5" y2="36" stroke="#f0ece0" stroke-width="1.8"/>
+    </g>
+
+    <!-- ONE PIECE style Title Text (bold italic, outlined, manga style) -->
+    <!-- Outline / shadow layer -->
+    <text x="52" y="36"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="24" font-weight="900" font-style="italic"
+          fill="#1a0900" stroke="#1a0900" stroke-width="5" stroke-linejoin="round"
+          letter-spacing="1">
+      GRAND LINE TECH ARSENAL
+    </text>
+    <!-- Main colored text -->
+    <text x="52" y="36"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="24" font-weight="900" font-style="italic"
+          fill="#f5a623" stroke="#c1121f" stroke-width="1" stroke-linejoin="round"
+          letter-spacing="1">
+      GRAND LINE TECH ARSENAL
     </text>
 
-    <!-- Bounty / Wanted Label in Header -->
-    <g transform="translate(730, 8)">
-      <rect width="105" height="22" rx="4" fill="#d90429" opacity="0.85"/>
-      <text x="52.5" y="15" fill="#ffffff" font-family="'Courier New', monospace" font-size="10" font-weight="bold" text-anchor="middle" letter-spacing="1">
-        ฿ 3,000,000,000
-      </text>
+    <!-- Bounty badge (right) -->
+    <rect x="698" y="10" width="148" height="30" rx="5" fill="#c1121f"/>
+    <rect x="700" y="12" width="144" height="26" rx="4" fill="none" stroke="#f5a623" stroke-width="1"/>
+    <!-- Outline text -->
+    <text x="774" y="30" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="11" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="2">฿ 3,000,000,000</text>
+    <text x="774" y="30" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="11" font-weight="900" font-style="italic"
+          fill="#f5a623">฿ 3,000,000,000</text>
+
+    <!-- ═══ ROW 1: LANGUAGES ═══ -->
+    <!-- Section label: One Piece manga font style -->
+    <text x="12" y="68"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="13" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="3">⚔ COMBAT LANGUAGES</text>
+    <text x="12" y="68"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="13" font-weight="900" font-style="italic"
+          fill="#f5a623" stroke="#c1121f" stroke-width="0.5">⚔ COMBAT LANGUAGES</text>
+
+    <!-- Python Pill — Staggered slide-in from left -->
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-120,0; 0,0" dur="0.7s" fill="freeze" begin="0.1s"/>
+        <rect x="10" y="75" width="108" height="30" rx="6" fill="url(#goldCard)" stroke="#f5a623" stroke-width="1.5"/>
+        <circle cx="26" cy="90" r="8" fill="#3776AB"/>
+        <text x="40" y="95"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">Python</text>
+        <text x="40" y="95"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">Python</text>
+      </g>
     </g>
 
-    <!-- === CONQUEROR'S HAKI SCANNING SWEEP === -->
-    <line x1="0" y1="40" x2="850" y2="40" stroke="#d90429" stroke-width="2" opacity="0" filter="url(#hakiGlow)">
-      <animate attributeName="y1" values="40;310;40" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="y2" values="40;310;40" dur="6s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.1;0.9;1" dur="6s" repeatCount="indefinite"/>
-    </line>
-
-    <!-- ═══════════════ ROW 1: COMBAT LANGUAGES (y=50, pills y=60) ═══════════════ -->
-    <text x="12" y="52" fill="#ffb703" font-family="'Courier New', monospace" font-weight="bold" font-size="11" letter-spacing="2" filter="url(#textGlow)">
-      ⚔️ COMBAT LANGUAGES
-    </text>
-
-    <!-- Python (Blue Flame / Luffy Gear 3 theme) -->
-    <g filter="url(#goldGlow)">
-      <rect x="10" y="60" width="102" height="28" rx="14" fill="#091a30" stroke="#38bdf8" stroke-width="1.5">
-        <animate attributeName="stroke" values="#38bdf8;#ffb703;#38bdf8" dur="4s" repeatCount="indefinite"/>
-      </rect>
-      <circle cx="24" cy="74" r="8" fill="#38bdf8">
-        <animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite"/>
-      </circle>
-      <text x="40" y="79" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">Python</text>
+    <!-- C Pill -->
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-120,0; 0,0" dur="0.7s" fill="freeze" begin="0.25s"/>
+        <rect x="126" y="75" width="64" height="30" rx="6" fill="url(#goldCard)" stroke="#f5a623" stroke-width="1.5"/>
+        <circle cx="142" cy="90" r="8" fill="#00599C"/>
+        <text x="156" y="95"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">C</text>
+        <text x="156" y="95"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">C</text>
+      </g>
     </g>
 
-    <!-- C -->
-    <g filter="url(#goldGlow)">
-      <rect x="120" y="60" width="60" height="28" rx="14" fill="#091a30" stroke="#0284c7" stroke-width="1.5">
-        <animate attributeName="stroke" values="#0284c7;#ffb703;#0284c7" dur="4s" repeatCount="indefinite" begin="0.3s"/>
-      </rect>
-      <circle cx="134" cy="74" r="8" fill="#0284c7">
-        <animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite" begin="0.3s"/>
-      </circle>
-      <text x="150" y="79" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">C</text>
+    <!-- Java Pill -->
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-120,0; 0,0" dur="0.7s" fill="freeze" begin="0.4s"/>
+        <rect x="198" y="75" width="88" height="30" rx="6" fill="#1a0500" stroke="#f97316" stroke-width="1.5"/>
+        <circle cx="214" cy="90" r="8" fill="#ED8B00"/>
+        <text x="228" y="95"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">Java</text>
+        <text x="228" y="95"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">Java</text>
+      </g>
     </g>
 
-    <!-- Java (Mera Mera no Mi Flame) -->
-    <g filter="url(#goldGlow)">
-      <rect x="188" y="60" width="86" height="28" rx="14" fill="#1c0900" stroke="#f97316" stroke-width="1.5">
-        <animate attributeName="stroke" values="#f97316;#d90429;#f97316" dur="3s" repeatCount="indefinite"/>
-      </rect>
-      <circle cx="202" cy="74" r="8" fill="#f97316">
-        <animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite" begin="0.6s"/>
-      </circle>
-      <text x="218" y="79" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">Java</text>
+    <!-- ═══ ROW 2: AI / ML ═══ -->
+    <text x="12" y="122"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="3">🍇 DEVIL FRUIT POWERS  AI / ML</text>
+    <text x="12" y="122"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+          fill="#a855f7" stroke="#4c1d95" stroke-width="0.5">🍇 DEVIL FRUIT POWERS  AI / ML</text>
+
+    <!-- TensorFlow -->
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.7s" fill="freeze" begin="0.5s"/>
+        <rect x="10" y="130" width="132" height="30" rx="6" fill="url(#redCard)" stroke="#c1121f" stroke-width="1.5"/>
+        <circle cx="26" cy="145" r="8" fill="#FF6F00"/>
+        <text x="40" y="150"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">TensorFlow</text>
+        <text x="40" y="150"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">TensorFlow</text>
+      </g>
     </g>
 
-    <!-- ═══════════════ ROW 2: DEVIL FRUIT POWERS (y=104, pills y=112) ═══════════════ -->
-    <text x="12" y="104" fill="#a855f7" font-family="'Courier New', monospace" font-weight="bold" font-size="11" letter-spacing="2" filter="url(#textGlow)">
-      🍇 DEVIL FRUIT POWERS (AI / ML)
-    </text>
-
-    <!-- TensorFlow (Magma Fruit Akainu / Sun God Nika Flame) -->
-    <g filter="url(#hakiGlow)">
-      <rect x="10" y="112" width="130" height="28" rx="14" fill="#200500" stroke="#ef4444" stroke-width="1.5">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite"/>
-      </rect>
-      <circle cx="24" cy="126" r="8" fill="#ef4444">
-        <animate attributeName="r" values="7;9.5;7" dur="2.5s" repeatCount="indefinite"/>
-      </circle>
-      <text x="40" y="131" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">TensorFlow</text>
-    </g>
-
-    <!-- scikit-learn (Ope Ope no Mi Law Aura) -->
-    <g filter="url(#goldGlow)">
-      <rect x="148" y="112" width="145" height="28" rx="14" fill="#1b0f00" stroke="#f59e0b" stroke-width="1.5">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="0.4s"/>
-      </rect>
-      <circle cx="162" cy="126" r="8" fill="#f59e0b">
-        <animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite" begin="0.4s"/>
-      </circle>
-      <text x="178" y="131" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">scikit-learn</text>
+    <!-- scikit-learn -->
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.7s" fill="freeze" begin="0.65s"/>
+        <rect x="150" y="130" width="148" height="30" rx="6" fill="#120800" stroke="#f59e0b" stroke-width="1.5"/>
+        <circle cx="166" cy="145" r="8" fill="#F7931E"/>
+        <text x="180" y="150"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">scikit-learn</text>
+        <text x="180" y="150"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">scikit-learn</text>
+      </g>
     </g>
 
     <!-- IBM Granite -->
-    <g filter="url(#goldGlow)">
-      <rect x="301" y="112" width="138" height="28" rx="14" fill="#04122c" stroke="#3b82f6" stroke-width="1.5">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="0.8s"/>
-      </rect>
-      <circle cx="315" cy="126" r="8" fill="#3b82f6">
-        <animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite" begin="0.8s"/>
-      </circle>
-      <text x="331" y="131" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">IBM Granite</text>
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.7s" fill="freeze" begin="0.8s"/>
+        <rect x="306" y="130" width="140" height="30" rx="6" fill="#020c1f" stroke="#3b82f6" stroke-width="1.5"/>
+        <circle cx="322" cy="145" r="8" fill="#1a56db"/>
+        <text x="336" y="150"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">IBM Granite</text>
+        <text x="336" y="150"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">IBM Granite</text>
+      </g>
     </g>
 
-    <!-- ═══════════════ ROW 3: NAVIGATOR HARDWARE (y=156, pills y=164) ═══════════════ -->
-    <text x="12" y="156" fill="#ec4899" font-family="'Courier New', monospace" font-weight="bold" font-size="11" letter-spacing="2" filter="url(#textGlow)">
-      🧩 NAVIGATOR HARDWARE (IoT)
-    </text>
+    <!-- ═══ ROW 3: IoT ═══ -->
+    <text x="12" y="178"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="3">🧩 NAVIGATOR HARDWARE  IoT</text>
+    <text x="12" y="178"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+          fill="#ec4899" stroke="#831843" stroke-width="0.5">🧩 NAVIGATOR HARDWARE  IoT</text>
 
-    <!-- Raspberry Pi (Thousand Sunny Crimson) -->
-    <g filter="url(#goldGlow)">
-      <rect x="10" y="164" width="148" height="28" rx="14" fill="#20000a" stroke="#ec4899" stroke-width="1.5">
-        <animate attributeName="stroke" values="#ec4899;#d90429;#ec4899" dur="3.5s" repeatCount="indefinite"/>
-      </rect>
-      <circle cx="24" cy="178" r="8" fill="#ec4899">
-        <animate attributeName="r" values="7;9;7" dur="3.5s" repeatCount="indefinite"/>
-      </circle>
-      <text x="40" y="183" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">Raspberry Pi</text>
+    <!-- Raspberry Pi -->
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.7s" fill="freeze" begin="0.9s"/>
+        <rect x="10" y="186" width="154" height="30" rx="6" fill="url(#redCard)" stroke="#ec4899" stroke-width="1.5"/>
+        <circle cx="26" cy="201" r="8" fill="#C51A4A"/>
+        <text x="40" y="206"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">Raspberry Pi</text>
+        <text x="40" y="206"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">Raspberry Pi</text>
+      </g>
     </g>
 
-    <!-- NVIDIA Jetson (Zoro's Enma Green Haki Flame) -->
-    <g filter="url(#hakiGlow)">
-      <rect x="166" y="164" width="156" height="28" rx="14" fill="#001808" stroke="#10b981" stroke-width="1.5">
-        <animate attributeName="stroke" values="#10b981;#00ff66;#10b981" dur="2.5s" repeatCount="indefinite"/>
-      </rect>
-      <circle cx="180" cy="178" r="8" fill="#10b981">
-        <animate attributeName="r" values="7;9.5;7" dur="2.5s" repeatCount="indefinite"/>
-      </circle>
-      <text x="196" y="183" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">NVIDIA Jetson</text>
+    <!-- NVIDIA Jetson -->
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.7s" fill="freeze" begin="1.05s"/>
+        <rect x="172" y="186" width="160" height="30" rx="6" fill="#001508" stroke="#10b981" stroke-width="1.5"/>
+        <circle cx="188" cy="201" r="8" fill="#76B900"/>
+        <text x="202" y="206"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">NVIDIA Jetson</text>
+        <text x="202" y="206"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">NVIDIA Jetson</text>
+      </g>
     </g>
 
-    <!-- ═══════════════ ROW 4: ALL BLUE CLOUD (y=208, pills y=216) ═══════════════ -->
-    <text x="12" y="208" fill="#06b6d4" font-family="'Courier New', monospace" font-weight="bold" font-size="11" letter-spacing="2" filter="url(#textGlow)">
-      🌊 ALL BLUE CLOUD PLATFORMS
-    </text>
+    <!-- ═══ ROW 4: CLOUD ═══ -->
+    <text x="12" y="234"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="3">🌊 ALL BLUE CLOUD PLATFORMS</text>
+    <text x="12" y="234"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+          fill="#06b6d4" stroke="#0e4b5a" stroke-width="0.5">🌊 ALL BLUE CLOUD PLATFORMS</text>
 
     <!-- MS Azure -->
-    <g filter="url(#goldGlow)">
-      <rect x="10" y="216" width="116" height="28" rx="14" fill="#021428" stroke="#06b6d4" stroke-width="1.5">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="0.2s"/>
-      </rect>
-      <circle cx="24" cy="230" r="8" fill="#06b6d4">
-        <animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite" begin="0.2s"/>
-      </circle>
-      <text x="40" y="235" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">MS Azure</text>
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.7s" fill="freeze" begin="1.1s"/>
+        <rect x="10" y="242" width="118" height="30" rx="6" fill="#010e1e" stroke="#06b6d4" stroke-width="1.5"/>
+        <circle cx="26" cy="257" r="8" fill="#0089D0"/>
+        <text x="40" y="262"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">MS Azure</text>
+        <text x="40" y="262"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">MS Azure</text>
+      </g>
     </g>
 
     <!-- Google Cloud -->
-    <g filter="url(#goldGlow)">
-      <rect x="134" y="216" width="148" height="28" rx="14" fill="#021428" stroke="#3b82f6" stroke-width="1.5">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="0.6s"/>
-      </rect>
-      <circle cx="148" cy="230" r="8" fill="#3b82f6">
-        <animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite" begin="0.6s"/>
-      </circle>
-      <text x="164" y="235" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">Google Cloud</text>
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.7s" fill="freeze" begin="1.25s"/>
+        <rect x="136" y="242" width="152" height="30" rx="6" fill="#010e1e" stroke="#3b82f6" stroke-width="1.5"/>
+        <circle cx="152" cy="257" r="8" fill="#4285F4"/>
+        <text x="166" y="262"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">Google Cloud</text>
+        <text x="166" y="262"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">Google Cloud</text>
+      </g>
     </g>
 
-    <!-- ═══════════════ ROW 5: HAKI & SECURITY (y=260, pills y=268) ═══════════════ -->
-    <text x="12" y="260" fill="#10b981" font-family="'Courier New', monospace" font-weight="bold" font-size="11" letter-spacing="2" filter="url(#textGlow)">
-      ⚡ HAKI &amp; CYBER SECURITY
-    </text>
+    <!-- ═══ ROW 5: SECURITY ═══ -->
+    <text x="12" y="290"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="3">⚡ HAKI &amp; CYBER SECURITY</text>
+    <text x="12" y="290"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+          fill="#10b981" stroke="#064e3b" stroke-width="0.5">⚡ HAKI &amp; CYBER SECURITY</text>
 
     <!-- Data Analytics -->
-    <g filter="url(#goldGlow)">
-      <rect x="10" y="268" width="160" height="28" rx="14" fill="#1e0018" stroke="#f43f5e" stroke-width="1.5">
-        <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="0.5s"/>
-      </rect>
-      <circle cx="24" cy="282" r="8" fill="#f43f5e">
-        <animate attributeName="r" values="7;9;7" dur="3s" repeatCount="indefinite" begin="0.5s"/>
-      </circle>
-      <text x="40" y="287" fill="#f8fafc" font-family="'Courier New', monospace" font-size="12" font-weight="bold">Data Analytics</text>
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.7s" fill="freeze" begin="1.3s"/>
+        <rect x="10" y="298" width="164" height="30" rx="6" fill="#150008" stroke="#f43f5e" stroke-width="1.5"/>
+        <circle cx="26" cy="313" r="8" fill="#FF6384"/>
+        <text x="40" y="318"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">Data Analytics</text>
+        <text x="40" y="318"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">Data Analytics</text>
+      </g>
     </g>
 
-    <!-- Cybersecurity (Armament Haki Green Glow) -->
-    <g filter="url(#hakiGlow)">
-      <rect x="178" y="268" width="154" height="28" rx="14" fill="#001c0c" stroke="#00ff66" stroke-width="1.5">
-        <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
-      </rect>
-      <circle cx="192" cy="282" r="8" fill="#00ff66">
-        <animate attributeName="r" values="7;9.5;7" dur="2s" repeatCount="indefinite"/>
-      </circle>
-      <text x="208" y="287" fill="#00ff88" font-family="'Courier New', monospace" font-size="12" font-weight="bold">Cybersecurity</text>
+    <!-- Cybersecurity -->
+    <g filter="url(#cardShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.7s" fill="freeze" begin="1.45s"/>
+        <rect x="182" y="298" width="158" height="30" rx="6" fill="#001508" stroke="#10b981" stroke-width="1.5"/>
+        <circle cx="198" cy="313" r="8" fill="#00cc44"/>
+        <text x="212" y="318"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#000" stroke="#000" stroke-width="2">Cybersecurity</text>
+        <text x="212" y="318"
+              font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic"
+              fill="#f0ece0">Cybersecurity</text>
+      </g>
     </g>
 
-    <!-- ═══════════════ ONE PIECE FOOTER BAR ═══════════════ -->
-    <line x1="0" y1="312" x2="850" y2="312" stroke="#ffb703" stroke-width="1"/>
-    <text x="425" y="328" text-anchor="middle" fill="#ffb703" font-family="'Courier New', monospace" font-size="10" font-weight="bold" letter-spacing="3" filter="url(#textGlow)">
-      ⚓ KING OF THE PIRATES DEV // IEM KOLKATA · B.TECH CSE (AI) · 3RD YEAR ⚓
+    <!-- ═══ FOOTER ═══ -->
+    <rect x="0" y="348" width="860" height="22" fill="#050d1a"/>
+    <rect x="0" y="348" width="860" height="2" fill="#c1121f"/>
+
+    <!-- Footer text — ONE PIECE manga title style -->
+    <text x="430" y="363" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="11" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="2.5" letter-spacing="3">
+      ⚓ KING OF THE PIRATES DEV  //  IEM KOLKATA · B.TECH CSE (AI) · 3RD YEAR ⚓
+    </text>
+    <text x="430" y="363" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="11" font-weight="900" font-style="italic"
+          fill="#f5a623" letter-spacing="3">
+      ⚓ KING OF THE PIRATES DEV  //  IEM KOLKATA · B.TECH CSE (AI) · 3RD YEAR ⚓
     </text>
 
-    <!-- ═══════════════ TREASURE MAP CORNER ACCENTS ═══════════════ -->
-    <g stroke="#ffb703" stroke-width="2" fill="none" opacity="0.8">
-      <path d="M10,24 L10,10 L24,10"/>
-      <path d="M840,24 L840,10 L826,10"/>
-      <path d="M10,316 L10,330 L24,330"/>
-      <path d="M840,316 L840,330 L826,330"/>
+    <!-- ═══ CORNER TREASURE ACCENTS ═══ -->
+    <g stroke="#f5a623" stroke-width="2" fill="none" opacity="0.7">
+      <path d="M8,26 L8,8 L26,8"/>
+      <path d="M852,26 L852,8 L834,8"/>
+      <path d="M8,344 L8,362 L26,362"/>
+      <path d="M852,344 L852,362 L834,362"/>
     </g>
+
+    <!-- Corner compass rose (top-right) -->
+    <g transform="translate(810, 80)" opacity="0.12" fill="#f5a623">
+      <polygon points="10,0 12,8 10,7 8,8" />
+      <polygon points="20,10 12,12 13,10 12,8" />
+      <polygon points="10,20 8,12 10,13 12,12" />
+      <polygon points="0,10 8,8 7,10 8,12" />
+      <circle cx="10" cy="10" r="3"/>
+    </g>
+
   </g>
 </svg>
-<!-- One Piece Theme v2 cache bust Mon Aug  3 23:51:09 IST 2026 -->
