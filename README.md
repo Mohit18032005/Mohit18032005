@@ -146,16 +146,20 @@ $ git log --stat
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Mohit18032005&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=ffffff&ring_color=a855f7&cache_seconds=1800" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohit18032005&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=ffffff&cache_seconds=1800" />
+<img height="195em" src="https://github-readme-stats.vercel.app/api?username=Mohit18032005&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=ffffff&ring_color=a855f7&include_all_commits=true&count_private=true&cache_seconds=1800" />
+<img height="195em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohit18032005&layout=compact&langs_count=8&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=ffffff&cache_seconds=1800" />
 
 <br/>
 
-<img src="https://streak-stats.demolab.com?user=Mohit18032005&theme=radical&hide_border=true&background=0D1117&ring=a855f7&fire=ff6b6b&currStreakLabel=a855f7&sideLabels=a855f7&dates=888888" />
+<img src="https://streak-stats.demolab.com?user=Mohit18032005&theme=github-dark-blue&hide_border=true&background=0D1117&ring=a855f7&fire=a855f7&currStreakLabel=a855f7&sideLabels=a855f7&currStreakNum=ffffff&sideNums=ffffff&dates=888888&stroke=a855f7&border=a855f7" width="70%"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mohit18032005&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area=true&hide_border=true" width="100%"/>
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Mohit18032005&theme=github_dark" width="100%"/>
+
+<br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mohit18032005&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area=true&area_color=a855f7&hide_border=true&custom_title=Mohit%27s%20Contribution%20Graph" width="100%"/>
 
 </div>
 
