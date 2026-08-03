@@ -1,14 +1,13 @@
 <div align="center">
 
 <!-- 🔥 Custom Animated Header: Matrix Rain + Neural Network + Glow -->
-<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/header.svg" width="100%" alt="MD Mohit Khan — Animated Header"/>
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/header.svg" width="100%" alt="MD Mohit Khan"/>
 
-<!-- Typing SVG -->
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&multiline=false&width=700&lines=AI+%26+ML+Engineer+in+the+making+%F0%9F%A4%96;IoT+Builder+%7C+Raspberry+Pi+Hacker+%F0%9F%94%A7;Turning+real-world+problems+into+code+%F0%9F%9A%80;B.Tech+CSE+(AI)+%40+IEM+Kolkata+%F0%9F%8E%93)](https://git.io/typing-svg)
+<!-- Animated Typing -->
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=750&lines=AI+%26+ML+Engineer+in+the+making+%F0%9F%A4%96;IoT+Builder+%7C+Raspberry+Pi+Hacker+%F0%9F%94%A7;Turning+real-world+problems+into+code+%F0%9F%9A%80;B.Tech+CSE+(AI)+%40+IEM+Kolkata+%F0%9F%8E%93;9+Certs+%C2%B7+2+Robots+%C2%B7+1+Internship+%C2%B7+Still+Shipping+%F0%9F%9A%80)](https://git.io/typing-svg)
 
 <br/>
 
-<!-- Social Badges -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohit-khan-147051323/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mk8212581@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohit18032005)
@@ -16,9 +15,11 @@
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ whoami`
+
+<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="360" alt="Coding GIF"/>
 
 ```
 ╔══════════════════════════════════════════════════════════╗
@@ -32,23 +33,40 @@
 
 > *"Motivated to solve real-world problems through the lens of Artificial Intelligence — one project at a time."*
 
----
+<br clear="right"/>
+
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ cat about_me.txt`
 
-I'm an **AI & ML-focused CSE student** who loves getting my hands dirty — from training models and analyzing data to wiring up a Raspberry Pi and watching hardware come alive.  
+<img align="right" src="https://media.giphy.com/media/L1R1tvI9svkIWwpVYr/giphy.gif" width="340" alt="AI Neural Network GIF"/>
+
+I'm an **AI & ML-focused CSE student** who loves getting my hands dirty — from training models and analyzing data to wiring up a Raspberry Pi and watching hardware come alive.
+
 Nine certifications in. Two physical robots built. One internship shipped. And still just getting started.
 
 The best code I write is the code that solves a problem nobody thought could be automated.
 
----
+```python
+# mohit.py — life in code
+while alive:
+    drink("chai ☕")
+    code(lang="Python")
+    learn(["AI", "ML", "IoT"])
+    build("something_cool 🤖")
+    if streak > 0:
+        keep_going()
+```
+
+<br clear="right"/>
+
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ ls ~/projects`
 
 <div align="center">
 
-### 🔴 Radar-Based Object Detection System
-`iot` · `hardware` · `real-time` · `1st Year`
+[![Project 1](https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&duration=2500&pause=99999&color=FF6B6B&center=true&vCenter=true&width=600&lines=📡+Radar-Based+Object+Detection+System&repeat=false)](https://github.com/Mohit18032005)
 
 </div>
 
@@ -57,7 +75,7 @@ The best code I write is the code that solves a problem nobody thought could be 
 - → Servo + ultrasonic sensor covering full 180° sweep
 - → Python scripts capturing real-time distance + angle data
 - → Live radar-style terminal/GUI visualization
-- → Skills: embedded systems, sensor interfacing, real-time processing
+- → Embedded systems · sensor interfacing · real-time processing
 
 **Stack:** `Raspberry Pi` `Python` `Ultrasonic Sensor` `Servo Motor` `GPIO`
 
@@ -65,8 +83,7 @@ The best code I write is the code that solves a problem nobody thought could be 
 
 <div align="center">
 
-### 🟣 Voice-Controlled AI Robot
-`ai` · `hardware` · `nlp` · `2nd Year`
+[![Project 2](https://readme-typing-svg.demolab.com?font=Fira+Code&size=17&duration=2500&pause=99999&color=A855F7&center=true&vCenter=true&width=600&lines=🤖+Voice-Controlled+AI+Robot&repeat=false)](https://github.com/Mohit18032005)
 
 </div>
 
@@ -79,24 +96,28 @@ The best code I write is the code that solves a problem nobody thought could be 
 
 **Stack:** `Raspberry Pi` `Python` `Google Voice API` `Alexa API` `GPIO`
 
----
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ cat stack.json`
 
 <div align="center">
 
+<img src="https://skillicons.dev/icons?i=python,c,java,tensorflow,raspberrypi,azure,gcp,linux,bash,git,github,vscode&theme=dark&perline=6" alt="Tech Stack Icons"/>
+
+<br/><br/>
+
 | Layer | Technologies |
 |-------|-------------|
 | **Languages** | ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white) ![C](https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white) ![Java](https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white) |
-| **AI / ML** | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![IBM](https://img.shields.io/badge/IBM_Granite-052FAD?style=flat-square&logo=ibm&logoColor=white) |
+| **AI / ML** | ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white) ![IBM Granite](https://img.shields.io/badge/IBM_Granite-052FAD?style=flat-square&logo=ibm&logoColor=white) |
 | **IoT / Hardware** | ![Raspberry Pi](https://img.shields.io/badge/Raspberry_Pi-C51A4A?style=flat-square&logo=raspberry-pi&logoColor=white) ![NVIDIA Jetson](https://img.shields.io/badge/NVIDIA_Jetson-76B900?style=flat-square&logo=nvidia&logoColor=white) |
-| **Cloud / Platforms** | ![Azure](https://img.shields.io/badge/Microsoft_Azure-0089D0?style=flat-square&logo=microsoft-azure&logoColor=white) ![Google](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white) |
-| **Data** | ![Analytics](https://img.shields.io/badge/Data_Analytics-FF6384?style=flat-square&logo=chartdotjs&logoColor=white) |
-| **Cybersecurity** | ![Security](https://img.shields.io/badge/Cyber_Security-1F1F1F?style=flat-square&logo=hackthebox&logoColor=00ff00) |
+| **Cloud** | ![Azure](https://img.shields.io/badge/Microsoft_Azure-0089D0?style=flat-square&logo=microsoft-azure&logoColor=white) ![Google Cloud](https://img.shields.io/badge/Google_Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white) |
+| **Data** | ![Data Analytics](https://img.shields.io/badge/Data_Analytics-FF6384?style=flat-square&logo=chartdotjs&logoColor=white) |
+| **Security** | ![Cyber Security](https://img.shields.io/badge/Cyber_Security-1F1F1F?style=flat-square&logo=hackthebox&logoColor=00ff00) |
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ cat certifications.md` 🏆
 
@@ -112,11 +133,17 @@ The best code I write is the code that solves a problem nobody thought could be 
 | 🧠 IBM Granite Models for Software Dev | IBM | Mar 2026 |
 | 💼 AI Internship | Codec Technologies Pvt. Ltd. | May–Jun 2026 |
 
-**9 certs · 2 robots built · 1 internship · still shipping**
+<div align="center">
 
----
+[![Certs](https://readme-typing-svg.demolab.com?font=Fira+Code&size=14&duration=2000&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=✅+9+Certs+%C2%B7+2+Robots+Built+%C2%B7+1+Internship+%C2%B7+Still+Shipping+🚀)](https://git.io/typing-svg)
+
+</div>
+
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ cat experience.md`
+
+<img align="right" src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="260" alt="Work GIF"/>
 
 ### 💼 Artificial Intelligence Intern — Codec Technologies Pvt. Ltd. *(Remote)*
 *May 14, 2026 – June 14, 2026 · AICTE & ICAC Approved · National Internship Portal*
@@ -126,17 +153,29 @@ The best code I write is the code that solves a problem nobody thought could be 
 - → Collaborated on testing and validation of AI applications
 - → Documented workflows for clean knowledge transfer
 
----
+<br clear="right"/>
+
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ git log --stat`
 
 <div align="center">
 
+<!-- 🐍 Contribution Snake — auto-generated by GitHub Action -->
+<picture>
+  <source media="(prefers-color-scheme: dark)"  srcset="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/output/github-contribution-grid-snake.svg"/>
+  <img alt="GitHub Contribution Snake" src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/output/github-contribution-grid-snake-dark.svg" width="100%"/>
+</picture>
+
+<br/>
+
+<!-- Activity Graph -->
 [![Mohit's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Mohit18032005&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area=true&area_color=2d1b69&hide_border=true&custom_title=Mohit%27s%20Contribution%20Graph&radius=16)](https://github.com/Mohit18032005)
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ cat philosophy.md`
 
@@ -151,7 +190,7 @@ The best code I write is the code that solves a problem nobody thought could be 
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ cat open_to.txt`
 
@@ -163,17 +202,17 @@ The best code I write is the code that solves a problem nobody thought could be 
 🟡  Hackathons & coding competitions
 ```
 
----
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ fortune`
 
 <div align="center">
 
-*"The best way to predict the future is to build it."*
+[![Random Dev Quote](https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&duration=4000&pause=2500&color=A855F7&center=true&vCenter=true&width=750&lines=%22The+best+way+to+predict+the+future+is+to+build+it.%22;%22First%2C+solve+the+problem.+Then%2C+write+the+code.%22;%22Code+is+like+humor.+If+you+have+to+explain+it%2C+it%27s+bad.%22;%22Make+it+work%2C+make+it+right%2C+make+it+fast.%22;%22Fueled+by+chai+%E2%98%95+%7C+Driven+by+curiosity+%F0%9F%A4%96%22)](https://git.io/typing-svg)
 
 </div>
 
----
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `let's connect`
 

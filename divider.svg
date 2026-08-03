@@ -1,0 +1,49 @@
+<svg width="900" height="40" viewBox="0 0 900 40" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#a855f7" stop-opacity="0"/>
+      <stop offset="20%"  stop-color="#a855f7" stop-opacity="0.7"/>
+      <stop offset="50%"  stop-color="#c084fc" stop-opacity="1"/>
+      <stop offset="80%"  stop-color="#a855f7" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="40" fill="#0d1117"/>
+
+  <!-- Base dim line -->
+  <line x1="30" y1="20" x2="870" y2="20" stroke="#1f1040" stroke-width="1"/>
+
+  <!-- Glowing gradient line -->
+  <line x1="30" y1="20" x2="870" y2="20" stroke="url(#lineGrad)" stroke-width="1.5" filter="url(#glow)"/>
+
+  <!-- Moving bright dot (left to right) -->
+  <circle cy="20" r="5" fill="#c084fc" filter="url(#glow)">
+    <animate attributeName="cx" values="-20;920;-20" dur="2.8s" repeatCount="indefinite" calcMode="ease-in-out"/>
+    <animate attributeName="opacity" values="0;1;1;0" keyTimes="0;0.05;0.95;1" dur="2.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Center diamond -->
+  <rect x="446" y="16" width="8" height="8" fill="#0d1117" stroke="#a855f7" stroke-width="1.3" transform="rotate(45 450 20)">
+    <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-width" values="1;2;1" dur="2s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Pulsing accent dots -->
+  <circle cx="180" cy="20" r="1.8" fill="#a855f7">
+    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="1.8s" repeatCount="indefinite" begin="0.2s"/>
+  </circle>
+  <circle cx="360" cy="20" r="1.8" fill="#a855f7">
+    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="1.8s" repeatCount="indefinite" begin="0.5s"/>
+  </circle>
+  <circle cx="540" cy="20" r="1.8" fill="#a855f7">
+    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="1.8s" repeatCount="indefinite" begin="0.8s"/>
+  </circle>
+  <circle cx="720" cy="20" r="1.8" fill="#a855f7">
+    <animate attributeName="opacity" values="0.15;0.7;0.15" dur="1.8s" repeatCount="indefinite" begin="1.1s"/>
+  </circle>
+</svg>
