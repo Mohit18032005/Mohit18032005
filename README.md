@@ -139,10 +139,6 @@ while alive:
 
 <div align="center">
 
-<!-- 🔥 Premium Animated Banner: Matrix Rain + Particle Network + Glow -->
-<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/animation.svg" width="100%" alt="Mohit Khan Animated Banner"/>
-
-<br/>
 
 <!-- Activity Graph -->
 [![Mohit's Activity Graph](https://github-readme-activity-graph.vercel.app/graph?username=Mohit18032005&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area=true&area_color=2d1b69&hide_border=true&custom_title=Mohit%27s%20Contribution%20Graph&radius=16)](https://github.com/Mohit18032005)
