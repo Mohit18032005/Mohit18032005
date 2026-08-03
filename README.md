@@ -94,6 +94,29 @@ while alive:
 
 </div>
 
+<br/>
+
+*(👉 **Click on any certificate title or verification link to view official credentials**)*
+
+| Certification Title | Issuer / Platform | Issued Date | Credential Link |
+| :--- | :--- | :--- | :--- |
+| 🎓 [**Information Theory**](https://coursera.org/verify/21IJK5HZKDHH) | The Chinese University of Hong Kong | Mar 2026 | [Verify Credential 🔗](https://coursera.org/verify/21IJK5HZKDHH) |
+| 🧠 [**IBM Granite Models for Software Development**](https://skillsbuild.ibm.com/) | IBM SkillsBuild | Mar 2026 | [Verify Credential 🔗](https://skillsbuild.ibm.com/) |
+| 📐 [**Foundations: Data, Data, Everywhere**](https://coursera.org/verify/BA5NXUY8UH16) | Google (Coursera) | Oct 2025 | [Verify Credential 🔗](https://coursera.org/verify/BA5NXUY8UH16) |
+| ☁️ [**Artificial Intelligence on Microsoft Azure**](https://coursera.org/verify/8EACPBDQD1U1) | Microsoft (Coursera) | Oct 2025 | [Verify Credential 🔗](https://coursera.org/verify/8EACPBDQD1U1) |
+| 📊 [**Data Analyst Career Guide & Interview Prep**](https://coursera.org/verify/A4H136IYRMO6) | IBM (Coursera) | Oct 2025 | [Verify Credential 🔗](https://coursera.org/verify/A4H136IYRMO6) |
+| 🤖 [**Generative AI: Introduction & Applications**](https://coursera.org/verify/MK21KZK6BGRU) | IBM (Coursera) | Oct 2025 | [Verify Credential 🔗](https://coursera.org/verify/MK21KZK6BGRU) |
+| 🤖 [**Introduction to Artificial Intelligence (AI)**](https://coursera.org/verify/SHDE984ZPY96) | IBM (Coursera) | Oct 2025 | [Verify Credential 🔗](https://coursera.org/verify/SHDE984ZPY96) |
+| 🛡️ [**Advanced System Security Topics**](https://coursera.org/verify/3NXSAP7XOHUQ) | University of Colorado (Coursera) | Oct 2025 | [Verify Credential 🔗](https://coursera.org/verify/3NXSAP7XOHUQ) |
+| 🛡️ [**Cyber Security Fundamentals**](https://coursera.org/verify/0VIY5FEL8KCF) | University of London (Coursera) | Oct 2025 | [Verify Credential 🔗](https://coursera.org/verify/0VIY5FEL8KCF) |
+| 📊 [**Data Analytics Job Simulation**](https://www.theforage.com/) | Deloitte (Forage) | Nov 2025 | [Verify (Code: QbAz3Ceq2GWpi5uca) 🔗](https://www.theforage.com/) |
+| 💻 [**Technology Job Simulation**](https://www.theforage.com/) | Deloitte (Forage) | Nov 2025 | [Verify (Code: 2RNdzatmfXJzMPn7x) 🔗](https://www.theforage.com/) |
+| 🛡️ [**Cyber Job Simulation**](https://www.theforage.com/) | Deloitte (Forage) | Oct 2025 | [Verify (Code: sqDB8N5cbm5CcYwh5) 🔗](https://www.theforage.com/) |
+| 🌱 [**Ignite India (Entrepreneurship)**](https://wadhwanifoundation.org/) | Wadhwani Foundation | Oct 2025 | [Verify Credential 🔗](https://wadhwanifoundation.org/) |
+| 🤖 [**AI Tools & ChatGPT Workshop**](https://be10x.in/) | be10x | Oct 2025 | [Verify Credential 🔗](https://be10x.in/) |
+| 🔌 [**Hands-on IoT: Raspberry Pi & NVIDIA Jetson**](https://github.com/Mohit18032005) | UEM Kolkata | Sep 2025 | [Verify Certificate 🔗](https://github.com/Mohit18032005) |
+| 💼 [**AI Engineering Internship**](https://github.com/Mohit18032005) | Codec Technologies | May–Jun 2026 | [Verify Certificate 🔗](https://github.com/Mohit18032005) |
+
 <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ cat experience.md`
