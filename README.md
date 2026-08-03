@@ -9,6 +9,7 @@
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohit-khan-147051323/)
+[![Portfolio](https://img.shields.io/badge/🌐%20Portfolio-a855f7?style=for-the-badge&logoColor=white)](https://demo-portfolio-one-delta.vercel.app/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mk8212581@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohit18032005)
 [![Profile Views](https://komarev.com/ghpvc/?username=Mohit18032005&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS)](https://github.com/Mohit18032005)
@@ -19,7 +20,7 @@
 
 ## `$ whoami`
 
-<img align="right" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" width="360" alt="Coding GIF"/>
+
 
 <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/whoami.svg" width="100%" alt="whoami card"/>
 
