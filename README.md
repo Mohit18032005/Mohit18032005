@@ -1,7 +1,7 @@
 <div align="center">
 
-<!-- Header Banner -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=MD%20Mohit%20Khan&fontSize=50&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=AI%20%7C%20ML%20%7C%20IoT%20%7C%20Builder&descAlignY=58&descSize=20" width="100%"/>
+<!-- 🔥 Custom Animated Header: Matrix Rain + Neural Network + Glow -->
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/header.svg" width="100%" alt="MD Mohit Khan — Animated Header"/>
 
 <!-- Typing SVG -->
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&multiline=false&width=700&lines=AI+%26+ML+Engineer+in+the+making+%F0%9F%A4%96;IoT+Builder+%7C+Raspberry+Pi+Hacker+%F0%9F%94%A7;Turning+real-world+problems+into+code+%F0%9F%9A%80;B.Tech+CSE+(AI)+%40+IEM+Kolkata+%F0%9F%8E%93)](https://git.io/typing-svg)
