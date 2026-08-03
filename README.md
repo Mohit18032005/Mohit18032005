@@ -67,7 +67,7 @@ while alive:
 
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/skills.svg" width="100%" alt="Tech Stack HUD"/>
+<img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/skills.svg?v=onepiece_v2" width="100%" alt="Tech Stack HUD"/>
 
 </div>
 
