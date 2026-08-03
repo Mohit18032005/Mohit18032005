@@ -51,10 +51,6 @@ while alive:
         keep_going()
 ```
 
-[![Mohit's Portfolio](https://img.shields.io/badge/🌐_Mohit's_Portfolio-Visit_Now-a855f7?style=for-the-badge&logoColor=white)](https://demo-portfolio-one-delta.vercel.app/)
-
-<br clear="right"/>
-
 <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/divider.svg" width="100%"/>
 
 ## `$ ls ~/projects`
