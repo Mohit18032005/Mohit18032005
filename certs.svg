@@ -1,176 +1,298 @@
-<svg width="850" height="400" viewBox="0 0 850 400" xmlns="http://www.w3.org/2000/svg">
+<svg width="850" height="410" viewBox="0 0 850 410" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <filter id="glow" x="-20%" y="-40%" width="140%" height="180%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <filter id="sg" x="-5%" y="-30%" width="110%" height="160%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="1.2" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-    <linearGradient id="progBg" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#a855f7" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.6"/>
+    <!-- Background Gradient: Deep Konoha Night -->
+    <linearGradient id="ninjaBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"   stop-color="#0a0514"/>
+      <stop offset="45%"  stop-color="#140924"/>
+      <stop offset="85%"  stop-color="#1c0b1a"/>
+      <stop offset="100%" stop-color="#08030f"/>
     </linearGradient>
-    <linearGradient id="scan" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%"   stop-color="#a855f7" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#a855f7" stop-opacity="0.5"/>
-      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+
+    <!-- Nine-Tails & Rasengan Chakra Progress Bar Gradient -->
+    <linearGradient id="chakraBar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"   stop-color="#ff6700"/>
+      <stop offset="50%"  stop-color="#ff003c"/>
+      <stop offset="100%" stop-color="#00f0ff"/>
     </linearGradient>
-    <clipPath id="clip"><rect width="850" height="400"/></clipPath>
+
+    <!-- Soft Chakra Shadow -->
+    <filter id="chakraShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#ff6700" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Rasengan Glow -->
+    <filter id="blueChakraShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#00f0ff" flood-opacity="0.4"/>
+    </filter>
+
+    <!-- Clip -->
+    <clipPath id="certClip"><rect width="850" height="410" rx="10"/></clipPath>
   </defs>
 
-  <g clip-path="url(#clip)">
-    <rect width="850" height="400" fill="#080b10"/>
+  <g clip-path="url(#certClip)">
+    <!-- Background -->
+    <rect width="850" height="410" fill="url(#ninjaBg)"/>
 
-    <!-- Dot grid -->
-    <g fill="#a855f7" opacity="0.025">
-      <circle cx="80" cy="80" r="1.2"/><circle cx="170" cy="80" r="1.2"/><circle cx="260" cy="80" r="1.2"/><circle cx="350" cy="80" r="1.2"/><circle cx="440" cy="80" r="1.2"/><circle cx="530" cy="80" r="1.2"/><circle cx="620" cy="80" r="1.2"/><circle cx="710" cy="80" r="1.2"/><circle cx="800" cy="80" r="1.2"/>
-      <circle cx="80" cy="160" r="1.2"/><circle cx="170" cy="160" r="1.2"/><circle cx="260" cy="160" r="1.2"/><circle cx="350" cy="160" r="1.2"/><circle cx="440" cy="160" r="1.2"/><circle cx="530" cy="160" r="1.2"/><circle cx="620" cy="160" r="1.2"/><circle cx="710" cy="160" r="1.2"/><circle cx="800" cy="160" r="1.2"/>
-      <circle cx="80" cy="240" r="1.2"/><circle cx="170" cy="240" r="1.2"/><circle cx="260" cy="240" r="1.2"/><circle cx="350" cy="240" r="1.2"/><circle cx="440" cy="240" r="1.2"/><circle cx="530" cy="240" r="1.2"/><circle cx="620" cy="240" r="1.2"/><circle cx="710" cy="240" r="1.2"/><circle cx="800" cy="240" r="1.2"/>
-      <circle cx="80" cy="320" r="1.2"/><circle cx="170" cy="320" r="1.2"/><circle cx="260" cy="320" r="1.2"/><circle cx="350" cy="320" r="1.2"/><circle cx="440" cy="320" r="1.2"/><circle cx="530" cy="320" r="1.2"/><circle cx="620" cy="320" r="1.2"/><circle cx="710" cy="320" r="1.2"/><circle cx="800" cy="320" r="1.2"/>
+    <!-- === DRIFTING KONOHA LEAVES & CHAKRA PARTICLES === -->
+    <!-- Leaf 1 (Konoha Green Leaf) -->
+    <g fill="#4eab65" opacity="0.6">
+      <path d="M0,0 C4,-8 12,-6 10,2 C8,8 0,10 0,0 Z">
+        <animateTransform attributeName="transform" type="translate" values="80,-10; 140,420" dur="9s" repeatCount="indefinite" begin="0s"/>
+        <animateTransform attributeName="transform" type="rotate" values="0; 360" dur="9s" repeatCount="indefinite" additive="sum"/>
+      </path>
+      <!-- Leaf 2 -->
+      <path d="M0,0 C4,-8 12,-6 10,2 C8,8 0,10 0,0 Z">
+        <animateTransform attributeName="transform" type="translate" values="320,-10; 380,420" dur="11s" repeatCount="indefinite" begin="2s"/>
+        <animateTransform attributeName="transform" type="rotate" values="45; 405" dur="11s" repeatCount="indefinite" additive="sum"/>
+      </path>
+      <!-- Leaf 3 -->
+      <path d="M0,0 C4,-8 12,-6 10,2 C8,8 0,10 0,0 Z">
+        <animateTransform attributeName="transform" type="translate" values="600,-10; 660,420" dur="10s" repeatCount="indefinite" begin="4s"/>
+        <animateTransform attributeName="transform" type="rotate" values="90; 450" dur="10s" repeatCount="indefinite" additive="sum"/>
+      </path>
+      <!-- Leaf 4 -->
+      <path d="M0,0 C4,-8 12,-6 10,2 C8,8 0,10 0,0 Z">
+        <animateTransform attributeName="transform" type="translate" values="780,-10; 810,420" dur="8s" repeatCount="indefinite" begin="1s"/>
+        <animateTransform attributeName="transform" type="rotate" values="120; 480" dur="8s" repeatCount="indefinite" additive="sum"/>
+      </path>
     </g>
 
-    <!-- Header bar -->
-    <rect width="850" height="36" fill="#0d0f17"/>
-    <circle cx="18" cy="18" r="6" fill="#ff5f57" opacity="0.85"/>
-    <circle cx="36" cy="18" r="6" fill="#febc2e" opacity="0.85"/>
-    <circle cx="54" cy="18" r="6" fill="#28c840" opacity="0.85"/>
-    <text x="72" y="23" fill="#a855f7" font-family="monospace" font-size="12" letter-spacing="2">$ cat certifications.md</text>
-    <text x="720" y="23" fill="#2d1b50" font-family="monospace" font-size="11">9 / 9  CERTIFIED</text>
-    <line x1="0" y1="36" x2="850" y2="36" stroke="#1a1040" stroke-width="1"/>
-
-    <!-- Progress bar -->
-    <rect x="20" y="48" width="810" height="10" rx="5" fill="#0f0920"/>
-    <rect x="20" y="48" width="810" height="10" rx="5" fill="url(#progBg)">
-      <animate attributeName="width" from="0" to="810" dur="1.5s" fill="freeze" begin="0.3s"/>
-    </rect>
-    <text x="425" y="57" text-anchor="middle" fill="white" font-family="monospace" font-size="7" letter-spacing="1">9 / 9  CERTIFICATIONS  EARNED</text>
-
-    <!-- ═════ ROW 1: Generative AI — IBM ═════ -->
-    <circle cx="22" cy="80" r="5.5" fill="#4589ff" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="0s"/>
-    </circle>
-    <text x="36" y="84" fill="#e2e8f0" font-family="monospace" font-size="12">Generative AI</text>
-    <rect x="490" y="70" width="72" height="18" rx="9" fill="#000d2a" stroke="#4589ff" stroke-width="0.8"/>
-    <text x="526" y="83" text-anchor="middle" fill="#4589ff" font-family="monospace" font-size="10">IBM</text>
-    <text x="700" y="84" fill="#4a3570" font-family="monospace" font-size="11">Mar 2025</text>
-
-    <!-- Separator -->
-    <line x1="20" y1="96" x2="830" y2="96" stroke="#12103a" stroke-width="0.6"/>
-
-    <!-- ═════ ROW 2: AI on Microsoft Azure — Microsoft ═════ -->
-    <circle cx="22" cy="113" r="5.5" fill="#00A4EF" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="0.28s"/>
-    </circle>
-    <text x="36" y="117" fill="#e2e8f0" font-family="monospace" font-size="12">AI on Microsoft Azure</text>
-    <rect x="490" y="103" width="104" height="18" rx="9" fill="#00060f" stroke="#00A4EF" stroke-width="0.8"/>
-    <text x="542" y="116" text-anchor="middle" fill="#00A4EF" font-family="monospace" font-size="10">Microsoft</text>
-    <text x="700" y="117" fill="#4a3570" font-family="monospace" font-size="11">Jul 2025</text>
-
-    <line x1="20" y1="129" x2="830" y2="129" stroke="#12103a" stroke-width="0.6"/>
-
-    <!-- ═════ ROW 3: Ignite India — Wadhwani Foundation ═════ -->
-    <circle cx="22" cy="146" r="5.5" fill="#22c55e" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="0.56s"/>
-    </circle>
-    <text x="36" y="150" fill="#e2e8f0" font-family="monospace" font-size="12">Ignite India (Entrepreneurship)</text>
-    <rect x="490" y="136" width="140" height="18" rx="9" fill="#001a00" stroke="#22c55e" stroke-width="0.8"/>
-    <text x="560" y="149" text-anchor="middle" fill="#22c55e" font-family="monospace" font-size="10">Wadhwani Fdn</text>
-    <text x="700" y="150" fill="#4a3570" font-family="monospace" font-size="11">Oct 2025</text>
-
-    <line x1="20" y1="162" x2="830" y2="162" stroke="#12103a" stroke-width="0.6"/>
-
-    <!-- ═════ ROW 4: Hands-on IoT — UEM Kolkata ═════ -->
-    <circle cx="22" cy="179" r="5.5" fill="#f97316" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="0.84s"/>
-    </circle>
-    <text x="36" y="183" fill="#e2e8f0" font-family="monospace" font-size="12">Hands-on IoT: RPi &amp; NVIDIA Jetson</text>
-    <rect x="490" y="169" width="112" height="18" rx="9" fill="#1a0700" stroke="#f97316" stroke-width="0.8"/>
-    <text x="546" y="182" text-anchor="middle" fill="#f97316" font-family="monospace" font-size="10">UEM Kolkata</text>
-    <text x="700" y="183" fill="#4a3570" font-family="monospace" font-size="11">Sep 2025</text>
-
-    <line x1="20" y1="195" x2="830" y2="195" stroke="#12103a" stroke-width="0.6"/>
-
-    <!-- ═════ ROW 5: Data Analytics — Deloitte ═════ -->
-    <circle cx="22" cy="212" r="5.5" fill="#86efac" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="1.12s"/>
-    </circle>
-    <text x="36" y="216" fill="#e2e8f0" font-family="monospace" font-size="12">Data Analytics</text>
-    <rect x="490" y="202" width="86" height="18" rx="9" fill="#001a00" stroke="#86efac" stroke-width="0.8"/>
-    <text x="533" y="215" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="10">Deloitte</text>
-    <text x="700" y="216" fill="#4a3570" font-family="monospace" font-size="11">Oct–Nov 2025</text>
-
-    <line x1="20" y1="228" x2="830" y2="228" stroke="#12103a" stroke-width="0.6"/>
-
-    <!-- ═════ ROW 6: Foundations of Data — Google ═════ -->
-    <circle cx="22" cy="245" r="5.5" fill="#4285F4" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="1.4s"/>
-    </circle>
-    <text x="36" y="249" fill="#e2e8f0" font-family="monospace" font-size="12">Foundations of Data</text>
-    <rect x="490" y="235" width="80" height="18" rx="9" fill="#000a1a" stroke="#4285F4" stroke-width="0.8"/>
-    <text x="530" y="248" text-anchor="middle" fill="#4285F4" font-family="monospace" font-size="10">Google</text>
-    <text x="700" y="249" fill="#4a3570" font-family="monospace" font-size="11">Dec 2025</text>
-
-    <line x1="20" y1="261" x2="830" y2="261" stroke="#12103a" stroke-width="0.6"/>
-
-    <!-- ═════ ROW 7: Cyber Job Simulation — Deloitte ═════ -->
-    <circle cx="22" cy="278" r="5.5" fill="#00ff88" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite" begin="1.68s"/>
-    </circle>
-    <text x="36" y="282" fill="#e2e8f0" font-family="monospace" font-size="12">Cyber Job Simulation</text>
-    <rect x="490" y="268" width="86" height="18" rx="9" fill="#001a00" stroke="#86efac" stroke-width="0.8"/>
-    <text x="533" y="281" text-anchor="middle" fill="#86efac" font-family="monospace" font-size="10">Deloitte</text>
-    <text x="700" y="282" fill="#4a3570" font-family="monospace" font-size="11">Jan 2026</text>
-
-    <line x1="20" y1="294" x2="830" y2="294" stroke="#12103a" stroke-width="0.6"/>
-
-    <!-- ═════ ROW 8: IBM Granite Models — IBM ═════ -->
-    <circle cx="22" cy="311" r="5.5" fill="#4589ff" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="1.96s"/>
-    </circle>
-    <text x="36" y="315" fill="#e2e8f0" font-family="monospace" font-size="12">IBM Granite Models for Software Dev</text>
-    <rect x="490" y="301" width="72" height="18" rx="9" fill="#000d2a" stroke="#4589ff" stroke-width="0.8"/>
-    <text x="526" y="314" text-anchor="middle" fill="#4589ff" font-family="monospace" font-size="10">IBM</text>
-    <text x="700" y="315" fill="#4a3570" font-family="monospace" font-size="11">Mar 2026</text>
-
-    <line x1="20" y1="327" x2="830" y2="327" stroke="#12103a" stroke-width="0.6"/>
-
-    <!-- ═════ ROW 9: AI Internship — Codec Technologies ═════ -->
-    <circle cx="22" cy="344" r="5.5" fill="#a855f7" filter="url(#glow)">
-      <animate attributeName="opacity" values="0.5;1;0.5" dur="2.5s" repeatCount="indefinite" begin="2.24s"/>
-    </circle>
-    <text x="36" y="348" fill="#e2e8f0" font-family="monospace" font-size="12">AI Internship</text>
-    <rect x="490" y="334" width="126" height="18" rx="9" fill="#100020" stroke="#a855f7" stroke-width="0.8"/>
-    <text x="553" y="347" text-anchor="middle" fill="#a855f7" font-family="monospace" font-size="10">Codec Technologies</text>
-    <text x="700" y="348" fill="#4a3570" font-family="monospace" font-size="11">May–Jun 2026</text>
-
-    <!-- ═════ FOOTER ═════ -->
-    <line x1="0" y1="364" x2="850" y2="364" stroke="#1a1040" stroke-width="1"/>
-    <text x="425" y="382" text-anchor="middle" fill="#2d1b50" font-family="monospace" font-size="11" letter-spacing="2">9 CERTS  ·  2 ROBOTS BUILT  ·  1 INTERNSHIP  ·  STILL SHIPPING</text>
-
-    <!-- Pulsing checkmarks after footer text -->
-    <circle cx="790" cy="379" r="3" fill="#a855f7" opacity="0.5">
-      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="1.5s" repeatCount="indefinite"/>
-    </circle>
-
-    <!-- Scanning line -->
-    <rect x="0" y="36" width="850" height="1.5" fill="url(#scan)">
-      <animate attributeName="y"       values="36;363;36"    dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="0;0.7;0.7;0" keyTimes="0;0.05;0.95;1" dur="9s" repeatCount="indefinite"/>
-    </rect>
-
-    <!-- Corner brackets -->
-    <g stroke="#a855f7" stroke-width="1.5" fill="none">
-      <path d="M8,20 L8,8 L20,8"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="0s"/></path>
-      <path d="M842,20 L842,8 L830,8"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="1s"/></path>
-      <path d="M8,382 L8,394 L20,394"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="1.5s"/></path>
-      <path d="M842,382 L842,394 L830,394"><animate attributeName="opacity" values="0.3;1;0.3" dur="3s" repeatCount="indefinite" begin="0.5s"/></path>
+    <!-- Floating Orange / Blue Chakra Orbs -->
+    <g fill="none">
+      <circle cx="100" cy="420" r="3" fill="#ff6700" opacity="0.4">
+        <animate attributeName="cy" values="420;10" dur="7s" repeatCount="indefinite" begin="0.5s"/>
+        <animate attributeName="opacity" values="0.5;0;0.5" dur="7s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="280" cy="420" r="2" fill="#00f0ff" opacity="0.5">
+        <animate attributeName="cy" values="420;20" dur="6s" repeatCount="indefinite" begin="2s"/>
+      </circle>
+      <circle cx="500" cy="420" r="3.5" fill="#ff003c" opacity="0.3">
+        <animate attributeName="cy" values="420;15" dur="9s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+      <circle cx="720" cy="420" r="2.5" fill="#ff6700" opacity="0.4">
+        <animate attributeName="cy" values="420;30" dur="8s" repeatCount="indefinite" begin="3s"/>
+      </circle>
     </g>
 
-    <!-- Outer border -->
-    <rect x="0.5" y="0.5" width="849" height="399" fill="none" stroke="#a855f7" stroke-width="0.8">
-      <animate attributeName="opacity" values="0.1;0.35;0.1" dur="4.5s" repeatCount="indefinite"/>
+    <!-- === HEADER BAR === -->
+    <rect x="0" y="0" width="850" height="46" fill="#0a0314"/>
+    <!-- Orange & Blue Ninja Headband Band -->
+    <rect x="0" y="0" width="850" height="3" fill="#ff6700"/>
+    <rect x="0" y="44" width="850" height="2" fill="#00f0ff"/>
+
+    <!-- HIDDEN LEAF SYMBOL (Konohagakure Spiral Icon) -->
+    <g transform="translate(14, 10)">
+      <!-- Headband Metal Plate background -->
+      <rect x="0" y="0" width="30" height="24" rx="4" fill="#2d3748" stroke="#a0aec0" stroke-width="1"/>
+      <circle cx="4" cy="4" r="1" fill="#a0aec0"/>
+      <circle cx="26" cy="4" r="1" fill="#a0aec0"/>
+      <circle cx="4" cy="20" r="1" fill="#a0aec0"/>
+      <circle cx="26" cy="20" r="1" fill="#a0aec0"/>
+      <!-- Konoha Spiral Symbol -->
+      <path d="M15,8 Q19,8 19,12 Q19,16 14,16 Q10,16 10,12 Q10,7 16,7 L19,4" fill="none" stroke="#ff6700" stroke-width="1.8" stroke-linecap="round"/>
+    </g>
+
+    <!-- NARUTO Style Title Header -->
+    <text x="52" y="32"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="22" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="4">
+      🍥 NINJA WAY CERTIFICATES // certifications.md
+    </text>
+    <text x="52" y="32"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="22" font-weight="900" font-style="italic"
+          fill="#ff6700" stroke="#ff003c" stroke-width="0.8">
+      🍥 NINJA WAY CERTIFICATES // certifications.md
+    </text>
+
+    <!-- S-Rank Shinobi Badge -->
+    <rect x="690" y="8" width="148" height="28" rx="5" fill="#ff6700"/>
+    <rect x="692" y="10" width="144" height="24" rx="4" fill="none" stroke="#ffe8ab" stroke-width="1"/>
+    <text x="764" y="27" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="11" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="2">🔥 S-RANK 9 SCROLLS</text>
+    <text x="764" y="27" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif"
+          font-size="11" font-weight="900" font-style="italic"
+          fill="#ffe8ab">🔥 S-RANK 9 SCROLLS</text>
+
+    <!-- === CHAKRA PROGRESS BAR === -->
+    <rect x="20" y="54" width="810" height="12" rx="6" fill="#12061c" stroke="#2d1342" stroke-width="1"/>
+    <rect x="20" y="54" width="810" height="12" rx="6" fill="url(#chakraBar)">
+      <animate attributeName="width" from="0" to="810" dur="1.8s" fill="freeze" begin="0.2s"/>
     </rect>
+    <text x="425" y="64" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="9" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="2" letter-spacing="1">
+      ⚡ 9 / 9 CHAKRA SCROLLS MASTERED ⚡
+    </text>
+    <text x="425" y="64" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="9" font-weight="900" font-style="italic"
+          fill="#ffffff" letter-spacing="1">
+      ⚡ 9 / 9 CHAKRA SCROLLS MASTERED ⚡
+    </text>
+
+    <!-- === CERTIFICATION ROWS (Staggered Entrance Animation) === -->
+
+    <!-- ROW 1: Generative AI — IBM -->
+    <g filter="url(#chakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.6s" fill="freeze" begin="0.1s"/>
+        <!-- Scroll Icon -->
+        <text x="22" y="94" font-size="12">📜</text>
+        <text x="42" y="94" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">Generative AI</text>
+        <text x="42" y="94" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">Generative AI</text>
+
+        <rect x="490" y="80" width="76" height="18" rx="4" fill="#091a30" stroke="#3b82f6" stroke-width="1.2"/>
+        <text x="528" y="93" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#3b82f6">IBM</text>
+        <text x="710" y="94" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">Mar 2025</text>
+      </g>
+    </g>
+    <line x1="20" y1="104" x2="830" y2="104" stroke="#230d36" stroke-width="0.8"/>
+
+    <!-- ROW 2: AI on Microsoft Azure — Microsoft -->
+    <g filter="url(#blueChakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.6s" fill="freeze" begin="0.25s"/>
+        <text x="22" y="128" font-size="12">📜</text>
+        <text x="42" y="128" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">AI on Microsoft Azure</text>
+        <text x="42" y="128" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">AI on Microsoft Azure</text>
+
+        <rect x="490" y="114" width="108" height="18" rx="4" fill="#021428" stroke="#00A4EF" stroke-width="1.2"/>
+        <text x="544" y="127" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#00A4EF">Microsoft</text>
+        <text x="710" y="128" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">Jul 2025</text>
+      </g>
+    </g>
+    <line x1="20" y1="138" x2="830" y2="138" stroke="#230d36" stroke-width="0.8"/>
+
+    <!-- ROW 3: Ignite India — Wadhwani Foundation -->
+    <g filter="url(#chakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.6s" fill="freeze" begin="0.4s"/>
+        <text x="22" y="162" font-size="12">📜</text>
+        <text x="42" y="162" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">Ignite India (Entrepreneurship)</text>
+        <text x="42" y="162" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">Ignite India (Entrepreneurship)</text>
+
+        <rect x="490" y="148" width="144" height="18" rx="4" fill="#001808" stroke="#10b981" stroke-width="1.2"/>
+        <text x="562" y="161" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#10b981">Wadhwani Fdn</text>
+        <text x="710" y="162" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">Oct 2025</text>
+      </g>
+    </g>
+    <line x1="20" y1="172" x2="830" y2="172" stroke="#230d36" stroke-width="0.8"/>
+
+    <!-- ROW 4: Hands-on IoT — UEM Kolkata -->
+    <g filter="url(#chakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.6s" fill="freeze" begin="0.55s"/>
+        <text x="22" y="196" font-size="12">📜</text>
+        <text x="42" y="196" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">Hands-on IoT: RPi &amp; NVIDIA Jetson</text>
+        <text x="42" y="196" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">Hands-on IoT: RPi &amp; NVIDIA Jetson</text>
+
+        <rect x="490" y="182" width="116" height="18" rx="4" fill="#1f0800" stroke="#f97316" stroke-width="1.2"/>
+        <text x="548" y="195" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#f97316">UEM Kolkata</text>
+        <text x="710" y="196" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">Sep 2025</text>
+      </g>
+    </g>
+    <line x1="20" y1="206" x2="830" y2="206" stroke="#230d36" stroke-width="0.8"/>
+
+    <!-- ROW 5: Data Analytics — Deloitte -->
+    <g filter="url(#chakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.6s" fill="freeze" begin="0.7s"/>
+        <text x="22" y="230" font-size="12">📜</text>
+        <text x="42" y="230" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">Data Analytics</text>
+        <text x="42" y="230" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">Data Analytics</text>
+
+        <rect x="490" y="216" width="90" height="18" rx="4" fill="#180010" stroke="#ec4899" stroke-width="1.2"/>
+        <text x="535" y="229" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#ec4899">Deloitte</text>
+        <text x="710" y="230" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">Oct–Nov 2025</text>
+      </g>
+    </g>
+    <line x1="20" y1="240" x2="830" y2="240" stroke="#230d36" stroke-width="0.8"/>
+
+    <!-- ROW 6: Foundations of Data — Google -->
+    <g filter="url(#blueChakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.6s" fill="freeze" begin="0.85s"/>
+        <text x="22" y="264" font-size="12">📜</text>
+        <text x="42" y="264" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">Foundations of Data</text>
+        <text x="42" y="264" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">Foundations of Data</text>
+
+        <rect x="490" y="250" width="84" height="18" rx="4" fill="#021428" stroke="#4285F4" stroke-width="1.2"/>
+        <text x="532" y="263" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#4285F4">Google</text>
+        <text x="710" y="264" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">Dec 2025</text>
+      </g>
+    </g>
+    <line x1="20" y1="274" x2="830" y2="274" stroke="#230d36" stroke-width="0.8"/>
+
+    <!-- ROW 7: Cyber Job Simulation — Deloitte -->
+    <g filter="url(#chakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.6s" fill="freeze" begin="1.0s"/>
+        <text x="22" y="298" font-size="12">📜</text>
+        <text x="42" y="298" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">Cyber Job Simulation</text>
+        <text x="42" y="298" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">Cyber Job Simulation</text>
+
+        <rect x="490" y="284" width="90" height="18" rx="4" fill="#001808" stroke="#10b981" stroke-width="1.2"/>
+        <text x="535" y="297" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#10b981">Deloitte</text>
+        <text x="710" y="298" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">Jan 2026</text>
+      </g>
+    </g>
+    <line x1="20" y1="308" x2="830" y2="308" stroke="#230d36" stroke-width="0.8"/>
+
+    <!-- ROW 8: IBM Granite Models — IBM -->
+    <g filter="url(#blueChakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="150,0; 0,0" dur="0.6s" fill="freeze" begin="1.15s"/>
+        <text x="22" y="332" font-size="12">📜</text>
+        <text x="42" y="332" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">IBM Granite Models for Software Dev</text>
+        <text x="42" y="332" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">IBM Granite Models for Software Dev</text>
+
+        <rect x="490" y="318" width="76" height="18" rx="4" fill="#091a30" stroke="#3b82f6" stroke-width="1.2"/>
+        <text x="528" y="331" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#3b82f6">IBM</text>
+        <text x="710" y="332" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">Mar 2026</text>
+      </g>
+    </g>
+    <line x1="20" y1="342" x2="830" y2="342" stroke="#230d36" stroke-width="0.8"/>
+
+    <!-- ROW 9: AI Internship — Codec Technologies -->
+    <g filter="url(#chakraShadow)">
+      <g>
+        <animateTransform attributeName="transform" type="translate" values="-150,0; 0,0" dur="0.6s" fill="freeze" begin="1.3s"/>
+        <text x="22" y="366" font-size="12">📜</text>
+        <text x="42" y="366" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#000" stroke="#000" stroke-width="2">AI Internship</text>
+        <text x="42" y="366" font-family="'Impact', 'Arial Black', sans-serif" font-size="13" font-weight="900" font-style="italic" fill="#f0ece0">AI Internship</text>
+
+        <rect x="490" y="352" width="134" height="18" rx="4" fill="#15001a" stroke="#a855f7" stroke-width="1.2"/>
+        <text x="557" y="365" text-anchor="middle" font-family="'Impact', 'Arial Black', sans-serif" font-size="10" font-style="italic" fill="#a855f7">Codec Technologies</text>
+        <text x="710" y="366" font-family="'Courier New', monospace" font-size="11" font-weight="bold" fill="#ff6700">May–Jun 2026</text>
+      </g>
+    </g>
+
+    <!-- ═══ FOOTER ═══ -->
+    <rect x="0" y="388" width="850" height="22" fill="#0a0314"/>
+    <rect x="0" y="388" width="850" height="2" fill="#ff6700"/>
+
+    <text x="425" y="403" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="11" font-weight="900" font-style="italic"
+          fill="#000" stroke="#000" stroke-width="2.5" letter-spacing="3">
+      🍃 DATTEBAYO!  //  9 CERTS  ·  2 ROBOTS BUILT  ·  1 INTERNSHIP  ·  STILL SHIPPING 🍃
+    </text>
+    <text x="425" y="403" text-anchor="middle"
+          font-family="'Impact', 'Arial Black', sans-serif" font-size="11" font-weight="900" font-style="italic"
+          fill="#ff6700" letter-spacing="3">
+      🍃 DATTEBAYO!  //  9 CERTS  ·  2 ROBOTS BUILT  ·  1 INTERNSHIP  ·  STILL SHIPPING 🍃
+    </text>
+
+    <!-- Corner Ninja Brackets -->
+    <g stroke="#ff6700" stroke-width="2" fill="none" opacity="0.8">
+      <path d="M8,24 L8,8 L24,8"/>
+      <path d="M842,24 L842,8 L826,8"/>
+      <path d="M8,384 L8,402 L24,402"/>
+      <path d="M842,384 L842,402 L826,402"/>
+    </g>
+
   </g>
 </svg>
