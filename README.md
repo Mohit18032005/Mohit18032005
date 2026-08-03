@@ -184,7 +184,7 @@ while alive:
 
 <br/>
 
-*Kolkata, West Bengal · UTC+5:30 · B.Tech CSE (AI) · 2nd Year*
+*Kolkata, West Bengal · UTC+5:30 · B.Tech CSE (AI) · 3rd Year*
 
 <br/>
 
