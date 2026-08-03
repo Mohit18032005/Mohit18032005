@@ -11,8 +11,8 @@
 <!-- Social Badges -->
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohit-khan-147051323/)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mk8212581@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mohitkhan2005)
-[![Profile Views](https://komarev.com/ghpvc/?username=mohitkhan2005&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS)](https://github.com/mohitkhan2005)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohit18032005)
+[![Profile Views](https://komarev.com/ghpvc/?username=Mohit18032005&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS)](https://github.com/Mohit18032005)
 
 </div>
 
@@ -146,16 +146,16 @@ $ git log --stat
 
 <div align="center">
 
-<img height="180em" src="https://github-readme-stats.vercel.app/api?username=mohitkhan2005&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=ffffff&ring_color=a855f7" />
-<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mohitkhan2005&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=ffffff" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api?username=Mohit18032005&show_icons=true&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&icon_color=a855f7&text_color=ffffff&ring_color=a855f7" />
+<img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Mohit18032005&layout=compact&theme=radical&hide_border=true&bg_color=0d1117&title_color=a855f7&text_color=ffffff" />
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=mohitkhan2005&theme=radical&hide_border=true&background=0d1117&ring=a855f7&fire=ff6b6b&currStreakLabel=a855f7" />
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=Mohit18032005&theme=radical&hide_border=true&background=0d1117&ring=a855f7&fire=ff6b6b&currStreakLabel=a855f7" />
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=mohitkhan2005&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area=true&hide_border=true" width="100%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Mohit18032005&bg_color=0d1117&color=a855f7&line=a855f7&point=ffffff&area=true&hide_border=true" width="100%"/>
 
 </div>
 
