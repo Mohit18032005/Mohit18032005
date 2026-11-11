@@ -20,8 +20,7 @@
 <a href="https://github.com/Mohit18032005">
   <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/badge-github.svg" height="45" alt="GitHub"/>
 </a>&nbsp;
-<br/><br/>
-<img src="https://komarev.com/ghpvc/?username=Mohit18032005&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS" alt="Profile Views"/>
+
 
 </div>
 
