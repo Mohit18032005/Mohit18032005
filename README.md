@@ -8,11 +8,20 @@
 
 <br/>
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mohit-khan-147051323/)
-[![Portfolio](https://img.shields.io/badge/🌐%20Portfolio-a855f7?style=for-the-badge&logoColor=white)](https://mohit-por.vercel.app/)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:mk8212581@gmail.com)
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Mohit18032005)
-[![Profile Views](https://komarev.com/ghpvc/?username=Mohit18032005&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS)](https://github.com/Mohit18032005)
+<a href="https://www.linkedin.com/in/mohit-khan-147051323/">
+  <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/badge-linkedin.svg" height="45" alt="LinkedIn"/>
+</a>&nbsp;
+<a href="https://mohit-por.vercel.app/">
+  <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/badge-portfolio.svg" height="45" alt="Portfolio"/>
+</a>&nbsp;
+<a href="mailto:mk8212581@gmail.com">
+  <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/badge-email.svg" height="45" alt="Email"/>
+</a>&nbsp;
+<a href="https://github.com/Mohit18032005">
+  <img src="https://raw.githubusercontent.com/Mohit18032005/Mohit18032005/main/badge-github.svg" height="45" alt="GitHub"/>
+</a>&nbsp;
+<br/><br/>
+<img src="https://komarev.com/ghpvc/?username=Mohit18032005&style=for-the-badge&color=blueviolet&label=PROFILE+VIEWS" alt="Profile Views"/>
 
 </div>
 
